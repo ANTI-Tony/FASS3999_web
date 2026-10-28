@@ -14,7 +14,7 @@ export const topics = [
   {
     id: 'safety', title: 'Child Safety', en: 'Child safety',
     short: 'Risk assessment, safety planning and professional support',
-    lede: '当住址或日常安排带来担忧时，安全规划可以和法律、Housing及孩子支持一起考虑。',
+    lede: 'If your address or daily arrangements raise concerns, consider safety planning alongside legal, housing and child support.',
     what: 'Risk depends on individual circumstances. Specialist family violence services can discuss safety options, support needs and referrals; webpage information cannot replace an individual risk assessment.',
     options: 'If it is safe and appropriate, contact a specialist service to discuss options. If there is immediate danger, contact local emergency services.',
     links: ['Mental Health', 'Housing', 'Family Law & Parenting'],
@@ -35,8 +35,8 @@ export const topics = [
   {
     id: 'housing', title: 'Housing', en: 'Housing',
     short: 'Temporary accommodation, relocation and stability',
-    lede: 'Housing决定可能同时影响安全、School连续性、交通和既有照顾安排。',
-    what: '可选择的服务取决于所在地、需求和当时资源。专业家暴服务可讨论安全Housing与转介；NSW Housing 可提供Housing服务信息。',
+    lede: 'Housing decisions can affect safety, school continuity, transport and existing care arrangements.',
+    what: 'Available services depend on location, needs and current resources. Specialist family violence services can discuss safe housing and referrals; NSW Housing provides information about housing support.',
     options: 'Ask about available options, eligibility, wait times and arrangements for children. If relocating, also check legal and school considerations.',
     links: ['Child Safety', 'Family Law & Parenting', 'Education & Care'],
     sources: [['NSW Government — Housing assistance', 'https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing']],

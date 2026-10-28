@@ -31,7 +31,7 @@ function HomePage({ onOpen, onAsk }) {
       <div className="hub-grid">{topics.map((topic) => <button className="hub-card" key={topic.id} onClick={() => onOpen('hub', topic.id)}><span className="card-top"><span className="icon"><Icon name={topic.id}/></span><span className="arrow">↗</span></span><strong>{topic.title}</strong><small>{topic.short}</small></button>)}</div>
     </section>
     <section className="section navigator" aria-labelledby="ai-heading"><div className="section-head"><div className="nav-title"><span className="icon"><Icon name="navigator"/></span><div><div className="eyebrow">02 · AI Information Navigator</div><h2 id="ai-heading">I have a specific question</h2><p className="section-sub">Break down questions, connect reviewed information and find relevant support.</p></div></div></div>
-      <div className="suggestions"><button className="chip" onClick={() => fill('我想带 8 岁的女儿搬去别的城市，可能需要转学，也担心现在的 parenting orders。')}>Moving with a child and changing schools</button><button className="chip" onClick={() => fill('My child’s emotions have changed a lot lately. Where can I find support?')}>Children’s emotions and support</button><button className="chip" onClick={() => fill('我需要暂时离开现在的住处，但不知道可以联系哪些Housing服务。')}>临时Housing与安全</button></div>
+      <div className="suggestions"><button className="chip" onClick={() => fill('I am considering moving to another city with my 8-year-old daughter. She may need to change schools, and I am concerned about existing parenting orders.')}>Moving with a child and changing schools</button><button className="chip" onClick={() => fill('My child’s emotions have changed a lot lately. Where can I find support?')}>Children’s emotions and support</button><button className="chip" onClick={() => fill('I need to leave my current home temporarily, but I do not know which housing services I can contact.')}>Temporary housing and safety</button></div>
       <form className="askbox" onSubmit={ask}><textarea rows="1" placeholder="Enter your question…" aria-label="Enter your question" value={question} onChange={(event) => setQuestion(event.target.value)}/><button className="send" aria-label="Send question"><SendIcon/></button></form>
     </section>
     <section className="section" aria-labelledby="case-heading"><div className="section-head"><div><div className="eyebrow">03 · My Case Summary</div><h2 id="case-heading">I have started contacting services and want to organise my information</h2><p className="section-sub">Keep a summary you have confirmed, then prepare tailored drafts when needed.</p></div></div>
@@ -58,7 +58,7 @@ function ArticlePane({ topic, onTopic }) {
 function AnswerCard({ onTopic }) {
   return <div className="bubble assistant">
     <div className="answer-title">Let’s separate the related questions</div>
-    <div className="answer-block"><strong>1 · You may be considering</strong><p>现有 parenting orders 或其他安排、孩子转学与生活连续性，以及你和孩子的安全与支持需求。</p></div>
+    <div className="answer-block"><strong>1 · You may be considering</strong><p>Existing parenting orders or other arrangements, your child’s school transfer and continuity, and safety and support for you and your child.</p></div>
     <div className="answer-block"><strong>2 · Start with these topics</strong><p><button className="text-link" onClick={() => onTopic('law')}>Family Law & Parenting →</button>　<button className="text-link" onClick={() => onTopic('education')}>Education & Care →</button>　<button className="text-link" onClick={() => onTopic('safety')}>Child Safety →</button></p></div>
     <div className="answer-block"><strong>3 · How these issues connect</strong><p>If parenting orders are in place, a move may relate to existing arrangements. Moving can also affect school, transport and daily care. Checking the orders and asking legal services, the school and a specialist safety service can help clarify how these issues connect.<a href="https://www.fcfcoa.gov.au/fl/children/parenting-orders" target="_blank" rel="noreferrer">Court information about parenting orders</a> · <a href="https://education.nsw.gov.au/schooling/parents-and-carers/going-to-school/enrolment" target="_blank" rel="noreferrer">NSW school enrolment information</a></p></div>
     <div className="answer-block"><strong>4 · What cannot be determined from this description</strong><p>Whether a move is permitted, what an order means in your situation, whether a school has places and your current risk level all need to be checked by professionals who understand the circumstances. This response cannot determine whether you can move.</p></div>
@@ -72,7 +72,7 @@ function AIPane({ messages, onSend, onTopic }) {
   const submit = (event) => { event.preventDefault(); if (!value.trim()) return; onSend(value.trim()); setValue(''); };
   return <article className="pane pane-active"><div className="pane-head"><div><div className="eyebrow">AI INFORMATION NAVIGATOR</div><h2>Work through a specific question</h2></div></div><div className="pane-body"><div className="chat-wrap"><div className="chat-scroll">
     {messages.map((message, index) => message.role === 'user' ? <div className="bubble user" key={index}>{message.text}</div> : message.role === 'answer' ? <AnswerCard key={index} onTopic={onTopic}/> : <div className="bubble assistant" key={index}>{message.text}</div>)}
-  </div><form className="chat-input" onSubmit={submit}><input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Ask a follow-up…" aria-label="Ask a follow-up"/><button aria-label="发送"><SendIcon/></button></form></div></div></article>;
+  </div><form className="chat-input" onSubmit={submit}><input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Ask a follow-up…" aria-label="Ask a follow-up"/><button aria-label="Send"><SendIcon/></button></form></div></div></article>;
 }
 
 function SummaryPane({ summary, setSummary, onToast }) {
@@ -93,7 +93,7 @@ function SummaryPane({ summary, setSummary, onToast }) {
     }
     const recipient = /school|school staff/.test(request) ? 'School' : /1800|family violence|safety service/.test(request) ? 'family violence support service' : 'Legal Aid NSW';
     const focus = recipient === 'School'
-      ? '孩子可能需要转学，我想了解入学流程、是否有名额，以及School可以提供哪些 wellbeing 支持。'
+      ? 'My child may need to change schools. I would like to understand enrolment, available places and student wellbeing support.'
       : recipient === 'family violence support service'
         ? 'I am thinking about safety and living arrangements for my child and me. I would like to discuss safety planning and support options.'
         : 'I am considering moving to another city with my 8-year-old daughter. We need to check our current arrangements and whether parenting orders exist. I would like to understand the legal issues that may relate to a move.';
@@ -104,7 +104,7 @@ function SummaryPane({ summary, setSummary, onToast }) {
   const confirm = () => {
     if (!proposed) return;
     const next = summary.map(([label, text]) => label === 'Service Contact History'
-      ? [label, 'User reports: 今天联系了法律咨询机构，对方建议先确认是否有 parenting orders。']
+      ? [label, 'User reports contacting a legal advice service today, which suggested first checking whether parenting orders exist.']
       : label === 'Outstanding Questions'
         ? [label, 'Relocation legal questions remain unresolved; check whether parenting orders exist.']
         : [label, text]);
@@ -124,7 +124,7 @@ function SummaryPane({ summary, setSummary, onToast }) {
     <div className="summary-banner">Privacy note: The information below is fictional. This prototype does not connect to AI or store real case information. Do not enter personal details.</div>
     <div className="summary-doc"><div className="doc-head"><div><h3>Master Summary</h3><span className="updated-note">Last updated: demo session</span></div><span className="version-pill">Version {version}</span></div>
       {summary.map(([label, text]) => <div className="doc-field" key={label}><strong>{label}</strong><p>{text}</p></div>)}
-      {proposed && <div className="proposed"><em>Proposed addition · Awaiting confirmation</em>{proposed}<div className="change-actions"><button className="confirm" onClick={confirm}>Confirm changes</button><button className="discard" onClick={() => { setProposed(''); onToast('拟议内容已Discard'); }}>Discard</button></div></div>}
+      {proposed && <div className="proposed"><em>Proposed addition · Awaiting confirmation</em>{proposed}<div className="change-actions"><button className="confirm" onClick={confirm}>Confirm changes</button><button className="discard" onClick={() => { setProposed(''); onToast('Proposed addition discarded'); }}>Discard</button></div></div>}
     </div>
     <details className="summary-history"><summary>History · View version history</summary>{history.map((item) => <p key={item}>{item}</p>)}</details>
     <div className="article-section"><h3>What would you like to do?</h3><div className="mode-switch"><button className={`mode ${mode === 'update' ? 'selected' : ''}`} onClick={() => setMode('update')}>Update Information</button><button className={`mode ${mode === 'prepare' ? 'selected' : ''}`} onClick={() => setMode('prepare')}>Prepare a Message</button></div>
