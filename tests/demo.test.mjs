@@ -81,3 +81,21 @@ test('restoration uses field review and creates a new version without replacing 
  assert.equal(h3.length,3);assert.equal(h3[2].number,3);assert.deepEqual(h3[2].summary,initialSummary);
  assert.match(h3[1].summary.contacts,/LawAccess/);assert.deepEqual(h3[0].summary,initialSummary);
 });
+
+test('eight recipient-specific drafts keep disclosure defaults relevant and never alter the summary',async()=>{
+ const {recipients}=await import('../src/demo-model.mjs');
+ assert.equal(recipients.length,8);assert.equal(new Set(recipients.map(r=>r.id)).size,8);
+ const current=contactProposal(initialSummary);const before=structuredClone(current);const opts=disclosureOptions(current);const drafts=[];
+ for(const recipient of recipients){
+  const selection=defaultDisclosures(opts,recipient.id);
+  assert.ok(selection.length>0,recipient.id);
+  const draft=composeDraft(current,recipient.id,selection,'');drafts.push(draft);
+  assert.ok(draft.includes(recipient.request));
+  if(!['legal','dvline','respect'].includes(recipient.id))assert.doesNotMatch(draft,/partner has used violence|contacting LawAccess|threatened to seek/);
+ }
+ assert.equal(new Set(drafts).size,8);assert.deepEqual(current,before);
+ const ndis=composeDraft(current,'ndis',defaultDisclosures(opts,'ndis'),'');
+ assert.match(ndis,/early childhood partner/);assert.doesNotMatch(ndis,/daughter has been anxious|parenting orders/);
+ const financial=composeDraft(current,'financial',defaultDisclosures(opts,'financial'),'');
+ assert.match(financial,/not employed/);assert.doesNotMatch(financial,/speech and developmental|daughter has been anxious/);
+});
