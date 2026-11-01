@@ -30,7 +30,9 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
+      - name: Check prototype behaviour
+        run: npm test
       - name: Build React app
         run: npm run build
       - name: Upload site artifact

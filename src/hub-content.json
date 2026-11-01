@@ -1,0 +1,2042 @@
+{
+  "project": "Beyond Stay or Leave",
+  "as_of": "2026-11-01",
+  "pages": [
+    {
+      "id": "A1",
+      "title": "Parenting Arrangements",
+      "category": "Law & Parenting",
+      "body": "Parenting arrangements include where children live, day-to-day care, and decisions about school and healthcare after separation. Informal agreements, written parenting plans and court-made parenting orders have different legal effects. Sharing responsibility for some major decisions does not mean children must spend equal time with each parent. Where family violence is involved, direct negotiation may be unsafe.",
+      "official_information": [
+        {
+          "label": "Legal Aid NSW — Parenting after separation",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting arrangements include where children live, day-to-day care, and decisions about school and healthcare after separation. Informal agreements, written parenting plans and court-made parenting orders have different legal effects. Sharing responsibility for some major decisions does not mean children must spend equal time with each parent. Where family violence is involved, direct negotiation may be unsafe.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting agreements",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-agreements",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting arrangements include where children live, day-to-day care, and decisions about school and healthcare after separation. Informal agreements, written parenting plans and court-made parenting orders have different legal effects. Sharing responsibility for some major decisions does not mean children must spend equal time with each parent. Where family violence is involved, direct negotiation may be unsafe.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parental responsibility and decision-making",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation/parental-responsibility-and-decision-making",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting arrangements include where children live, day-to-day care, and decisions about school and healthcare after separation. Informal agreements, written parenting plans and court-made parenting orders have different legal effects. Sharing responsibility for some major decisions does not mean children must spend equal time with each parent. Where family violence is involved, direct negotiation may be unsafe.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A2",
+        "A3",
+        "A5",
+        "F3"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "A2",
+      "title": "Contact with the Other Parent",
+      "category": "Law & Parenting",
+      "body": "Separation does not automatically decide whether or when children spend time with the other parent. Arrangements need to consider their best interests, including safety, individual needs and views. Family violence may affect how contact is arranged; neither contact nor no contact can be assumed for every family. Any existing court orders need individual legal review.",
+      "official_information": [
+        {
+          "label": "Legal Aid NSW — Parenting after separation",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation does not automatically decide whether or when children spend time with the other parent. Arrangements need to consider their best interests, including safety, individual needs and views. Family violence may affect how contact is arranged; neither contact nor no contact can be assumed for every family. Any existing court orders need individual legal review.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parental responsibility and decision-making",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation/parental-responsibility-and-decision-making",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation does not automatically decide whether or when children spend time with the other parent. Arrangements need to consider their best interests, including safety, individual needs and views. Family violence may affect how contact is arranged; neither contact nor no contact can be assumed for every family. Any existing court orders need individual legal review.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs and Family law",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-and-family-law",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation does not automatically decide whether or when children spend time with the other parent. Arrangements need to consider their best interests, including safety, individual needs and views. Family violence may affect how contact is arranged; neither contact nor no contact can be assumed for every family. Any existing court orders need individual legal review.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A3",
+        "A5",
+        "B1",
+        "C5"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "A3",
+      "title": "Parenting Orders",
+      "category": "Law & Parenting",
+      "body": "Parenting orders are court-made arrangements that may cover where children live, time with parents and major long-term decisions. They differ from voluntary parenting plans and are generally legally enforceable. A change in family circumstances does not automatically end an order. Ask a legal service about its terms, proposed changes or possible breaches.",
+      "official_information": [
+        {
+          "label": "Legal Aid NSW — Parenting (overview)",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting orders are court-made arrangements that may cover where children live, time with parents and major long-term decisions. They differ from voluntary parenting plans and are generally legally enforceable. A change in family circumstances does not automatically end an order. Ask a legal service about its terms, proposed changes or possible breaches.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Changing your parenting arrangements",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/after-the-court-makes-a-decision-in-your-parenting-case/changing-your-parenting-arrangements",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting orders are court-made arrangements that may cover where children live, time with parents and major long-term decisions. They differ from voluntary parenting plans and are generally legally enforceable. A change in family circumstances does not automatically end an order. Ask a legal service about its terms, proposed changes or possible breaches.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting agreements",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-agreements",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting orders are court-made arrangements that may cover where children live, time with parents and major long-term decisions. They differ from voluntary parenting plans and are generally legally enforceable. A change in family circumstances does not automatically end an order. Ask a legal service about its terms, proposed changes or possible breaches.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A1",
+        "A4",
+        "A5",
+        "E3"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "A4",
+      "title": "Relocation with Children",
+      "category": "Law & Parenting",
+      "body": "There is no single answer to whether a parent can move with children to another city. Relevant questions include existing parenting orders, how a move may affect time with the other parent or major decisions, school arrangements and family violence. Leaving a violent relationship does not mean court orders can be ignored. A partner’s statement is not a legal ruling, but it also does not establish that a move is legally permitted.",
+      "official_information": [
+        {
+          "label": "Family Violence Law Help — Can I move away with the children?",
+          "url": "https://familyviolencelaw.gov.au/family-law/arrangements-for-children/can-i-move-away-with-the-children/",
+          "organisation": "Family Violence Law Help",
+          "jurisdiction": "NSW / Australia",
+          "supports": "There is no single answer to whether a parent can move with children to another city. Relevant questions include existing parenting orders, how a move may affect time with the other parent or major decisions, school arrangements and family violence. Leaving a violent relationship does not mean court orders can be ignored. A partner’s statement is not a legal ruling, but it also does not establish that a move is legally permitted.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting after separation",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "There is no single answer to whether a parent can move with children to another city. Relevant questions include existing parenting orders, how a move may affect time with the other parent or major decisions, school arrangements and family violence. Leaving a violent relationship does not mean court orders can be ignored. A partner’s statement is not a legal ruling, but it also does not establish that a move is legally permitted.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Family law guidelines",
+          "url": "https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "There is no single answer to whether a parent can move with children to another city. Relevant questions include existing parenting orders, how a move may affect time with the other parent or major decisions, school arrangements and family violence. Leaving a violent relationship does not mean court orders can be ignored. A partner’s statement is not a legal ruling, but it also does not establish that a move is legally permitted.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        }
+      ],
+      "related_topic_ids": [
+        "A3",
+        "D5",
+        "E2",
+        "E3",
+        "B2"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        },
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        },
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": true
+    },
+    {
+      "id": "A5",
+      "title": "AVOs and Parenting Orders",
+      "category": "Law & Parenting",
+      "body": "An apprehended violence order (AVO) restricts violence, threats or other specified behaviour. An AVO and parenting orders are different legal orders; an AVO does not automatically cancel all parenting arrangements. If their terms appear to conflict, a lawyer needs to consider the actual documents and applicable law. Seek individual advice about safety concerns during handovers or contact.",
+      "official_information": [
+        {
+          "label": "Legal Aid NSW — AVOs and Family law",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-and-family-law",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "An apprehended violence order (AVO) restricts violence, threats or other specified behaviour. An AVO and parenting orders are different legal orders; an AVO does not automatically cancel all parenting arrangements. If their terms appear to conflict, a lawyer needs to consider the actual documents and applicable law. Seek individual advice about safety concerns during handovers or contact.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Family Violence Law Help — Arrangements when there is a DVO",
+          "url": "https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-do-we-make-arrangments-when-theres-a-domestic-violence-order/",
+          "organisation": "Family Violence Law Help",
+          "jurisdiction": "NSW / Australia",
+          "supports": "An apprehended violence order (AVO) restricts violence, threats or other specified behaviour. An AVO and parenting orders are different legal orders; an AVO does not automatically cancel all parenting arrangements. If their terms appear to conflict, a lawyer needs to consider the actual documents and applicable law. Seek individual advice about safety concerns during handovers or contact.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs to protect children",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-to-protect-children",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "An apprehended violence order (AVO) restricts violence, threats or other specified behaviour. An AVO and parenting orders are different legal orders; an AVO does not automatically cancel all parenting arrangements. If their terms appear to conflict, a lawyer needs to consider the actual documents and applicable law. Seek individual advice about safety concerns during handovers or contact.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A2",
+        "A3",
+        "B4",
+        "E3"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        },
+        {
+          "name": "NSW Police / 000",
+          "helps_with": "Emergency response and information about protection orders and offences.",
+          "limitations": "Cannot guarantee that an order removes all risk or determines parenting arrangements.",
+          "contact": "000 · Immediate danger in Australia",
+          "url": "https://www.police.nsw.gov.au/crime/domestic_and_family_violence/children_in_domestic_and_family_violence"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "A6",
+      "title": "Legal Help",
+      "category": "Law & Parenting",
+      "body": "General legal information cannot predict what a court will decide for a particular family. Legal Aid NSW and LawAccess NSW provide legal information and connections to appropriate services. Questions may include whether parenting orders exist, relocation with children, or how an AVO affects contact. The service must confirm eligibility for advice, ongoing representation or legal aid.",
+      "official_information": [
+        {
+          "label": "Legal Aid NSW — Contact and legal help",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "General legal information cannot predict what a court will decide for a particular family. Legal Aid NSW and LawAccess NSW provide legal information and connections to appropriate services. Questions may include whether parenting orders exist, relocation with children, or how an AVO affects contact. The service must confirm eligibility for advice, ongoing representation or legal aid.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting (overview)",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "General legal information cannot predict what a court will decide for a particular family. Legal Aid NSW and LawAccess NSW provide legal information and connections to appropriate services. Questions may include whether parenting orders exist, relocation with children, or how an AVO affects contact. The service must confirm eligibility for advice, ongoing representation or legal aid.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs and Family law",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-and-family-law",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "General legal information cannot predict what a court will decide for a particular family. Legal Aid NSW and LawAccess NSW provide legal information and connections to appropriate services. Questions may include whether parenting orders exist, relocation with children, or how an AVO affects contact. The service must confirm eligibility for advice, ongoing representation or legal aid.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "B1",
+      "title": "Children Experiencing Violence",
+      "category": "Safety & Protection",
+      "body": "Children may be affected by seeing, hearing or living with intimidation and control, even when they have not been physically assaulted. Effects can involve emotions, behaviour, relationships, learning and development; responses differ between children. Each child has their own safety and support needs. Appropriate professional support can help families understand those needs.",
+      "official_information": [
+        {
+          "label": "1800RESPECT — Impact of DFV on children",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people/children-and-violence/impacts",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may be affected by seeing, hearing or living with intimidation and control, even when they have not been physically assaulted. Effects can involve emotions, behaviour, relationships, learning and development; responses differ between children. Each child has their own safety and support needs. Appropriate professional support can help families understand those needs.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "1800RESPECT — Children and young people",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may be affected by seeing, hearing or living with intimidation and control, even when they have not been physically assaulted. Effects can involve emotions, behaviour, relationships, learning and development; responses differ between children. Each child has their own safety and support needs. Appropriate professional support can help families understand those needs.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B2",
+        "C1",
+        "C5",
+        "E4"
+      ],
+      "professional_services": [
+        {
+          "name": "1800RESPECT",
+          "helps_with": "Family violence counselling, information and specialist support referrals.",
+          "limitations": "Not a replacement for emergency services; cannot guarantee safety or accommodation.",
+          "contact": "1800 737 732 · 24/7",
+          "url": "https://www.1800respect.org.au/"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "B2",
+      "title": "Safety During and After Separation",
+      "category": "Safety & Protection",
+      "body": "Risk can change or increase around separation, and children’s safety needs separate consideration. Specialist safety planning considers the family’s particular circumstances and available support. General information is not a set of leaving instructions for every family. Relocation alone cannot guarantee safety.",
+      "official_information": [
+        {
+          "label": "NSW DCJ — How to leave a violent relationship safely",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/how-to-stay-safe/how-to-leave-a-violent-relationship-safely.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Risk can change or increase around separation, and children’s safety needs separate consideration. Specialist safety planning considers the family’s particular circumstances and available support. General information is not a set of leaving instructions for every family. Relocation alone cannot guarantee safety.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Getting help to leave",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/domestic-and-family-violence/getting-help-to-leave",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Risk can change or increase around separation, and children’s safety needs separate consideration. Specialist safety planning considers the family’s particular circumstances and available support. General information is not a set of leaving instructions for every family. Relocation alone cannot guarantee safety.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW DCJ — I have children and experience domestic violence",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Risk can change or increase around separation, and children’s safety needs separate consideration. Specialist safety planning considers the family’s particular circumstances and available support. General information is not a set of leaving instructions for every family. Relocation alone cannot guarantee safety.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B1",
+        "B5",
+        "A4",
+        "D1"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        },
+        {
+          "name": "1800RESPECT",
+          "helps_with": "Family violence counselling, information and specialist support referrals.",
+          "limitations": "Not a replacement for emergency services; cannot guarantee safety or accommodation.",
+          "contact": "1800 737 732 · 24/7",
+          "url": "https://www.1800respect.org.au/"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "B3",
+      "title": "Child Protection & DCJ",
+      "category": "Safety & Protection",
+      "body": "A report to child protection does not automatically mean a child will be removed. DCJ may contact a family and assess the child’s circumstances after a report of risk. Reporting, assessment, support and legal action are different processes; the response depends on the assessment and relevant law. This page cannot predict an individual outcome or replace necessary professional help.",
+      "official_information": [
+        {
+          "label": "NSW DCJ — What happens if my child is reported?",
+          "url": "https://dcj.nsw.gov.au/children-and-families/protecting-our-kids/reporting-a-child-at-risk/if-my-child-is-reported.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A report to child protection does not automatically mean a child will be removed. DCJ may contact a family and assess the child’s circumstances after a report of risk. Reporting, assessment, support and legal action are different processes; the response depends on the assessment and relevant law. This page cannot predict an individual outcome or replace necessary professional help.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW DCJ — I have children and experience domestic violence",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A report to child protection does not automatically mean a child will be removed. DCJ may contact a family and assess the child’s circumstances after a report of risk. Reporting, assessment, support and legal action are different processes; the response depends on the assessment and relevant law. This page cannot predict an individual outcome or replace necessary professional help.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Police — Children in domestic and family violence",
+          "url": "https://www.police.nsw.gov.au/crime/domestic_and_family_violence/children_in_domestic_and_family_violence",
+          "organisation": "NSW Police",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A report to child protection does not automatically mean a child will be removed. DCJ may contact a family and assess the child’s circumstances after a report of risk. Reporting, assessment, support and legal action are different processes; the response depends on the assessment and relevant law. This page cannot predict an individual outcome or replace necessary professional help.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B1",
+        "B2",
+        "B4",
+        "A5"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW DCJ Child Protection",
+          "helps_with": "Information about child protection processes, reporting and assessment.",
+          "limitations": "Cannot predict an assessment outcome from this website.",
+          "contact": "Child Protection Helpline · 13 21 11",
+          "url": "https://dcj.nsw.gov.au/children-and-families/protecting-our-kids/reporting-a-child-at-risk/if-my-child-is-reported.html"
+        },
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        }
+      ],
+      "featured_demo": true
+    },
+    {
+      "id": "B4",
+      "title": "Children's Safety and AVOs",
+      "category": "Safety & Protection",
+      "body": "Children in NSW can be protected by an AVO. Whether a child is included, which conditions apply and how the order interacts with parenting orders depend on the documents and law. An AVO is not itself a criminal conviction, although breaching it may be a criminal offence. An AVO cannot be assumed to resolve every issue about contact with children.",
+      "official_information": [
+        {
+          "label": "NSW Police — Children on AVOs",
+          "url": "https://www.police.nsw.gov.au/crime/domestic_and_family_violence/children_in_domestic_and_family_violence/children_dv_accordian/children_on_apprehended_violence_orders_avos",
+          "organisation": "NSW Police",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children in NSW can be protected by an AVO. Whether a child is included, which conditions apply and how the order interacts with parenting orders depend on the documents and law. An AVO is not itself a criminal conviction, although breaching it may be a criminal offence. An AVO cannot be assumed to resolve every issue about contact with children.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs to protect children",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-to-protect-children",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children in NSW can be protected by an AVO. Whether a child is included, which conditions apply and how the order interacts with parenting orders depend on the documents and law. An AVO is not itself a criminal conviction, although breaching it may be a criminal offence. An AVO cannot be assumed to resolve every issue about contact with children.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs and Family law",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-and-family-law",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children in NSW can be protected by an AVO. Whether a child is included, which conditions apply and how the order interacts with parenting orders depend on the documents and law. An AVO is not itself a criminal conviction, although breaching it may be a criminal offence. An AVO cannot be assumed to resolve every issue about contact with children.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A5",
+        "A2",
+        "E3"
+      ],
+      "professional_services": [
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        },
+        {
+          "name": "NSW Police / 000",
+          "helps_with": "Emergency response and information about protection orders and offences.",
+          "limitations": "Cannot guarantee that an order removes all risk or determines parenting arrangements.",
+          "contact": "000 · Immediate danger in Australia",
+          "url": "https://www.police.nsw.gov.au/crime/domestic_and_family_violence/children_in_domestic_and_family_violence"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "B5",
+      "title": "Digital Safety & Privacy",
+      "category": "Safety & Protection",
+      "body": "Children’s phones, shared accounts, location settings, smart watches, social media and game chats can expose information about a family’s movements. A person using violence may misuse these technologies to monitor children or caregivers. eSafety explains common risks and specialist support options. Changing settings can itself affect safety, so a generic account-reset checklist is not appropriate for every family.",
+      "official_information": [
+        {
+          "label": "eSafety — Supporting children experiencing domestic violence and tech abuse",
+          "url": "https://www.esafety.gov.au/key-topics/domestic-family-violence/support-service-resources/supporting-kids-dealing-with-tech-abuse",
+          "organisation": "eSafety",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children’s phones, shared accounts, location settings, smart watches, social media and game chats can expose information about a family’s movements. A person using violence may misuse these technologies to monitor children or caregivers. eSafety explains common risks and specialist support options. Changing settings can itself affect safety, so a generic account-reset checklist is not appropriate for every family.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Service NSW — DFV support guide",
+          "url": "https://www.service.nsw.gov.au/guide/domestic-and-family-violence",
+          "organisation": "Service NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children’s phones, shared accounts, location settings, smart watches, social media and game chats can expose information about a family’s movements. A person using violence may misuse these technologies to monitor children or caregivers. eSafety explains common risks and specialist support options. Changing settings can itself affect safety, so a generic account-reset checklist is not appropriate for every family.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B2",
+        "E3",
+        "F6"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        },
+        {
+          "name": "1800RESPECT",
+          "helps_with": "Family violence counselling, information and specialist support referrals.",
+          "limitations": "Not a replacement for emergency services; cannot guarantee safety or accommodation.",
+          "contact": "1800 737 732 · 24/7",
+          "url": "https://www.1800respect.org.au/"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "B6",
+      "title": "Emergency Support",
+      "category": "Safety & Protection",
+      "body": "If you or a child are in immediate danger in Australia, call 000. NSW Domestic Violence Line (1800 656 463) and 1800RESPECT (1800 737 732) offer specialist information, support and referrals. Services can discuss safety, children’s needs and accommodation pathways. A referral does not guarantee immediate accommodation or service availability.",
+      "official_information": [
+        {
+          "label": "NSW DCJ — I have children and experience domestic violence",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If you or a child are in immediate danger in Australia, call 000. NSW Domestic Violence Line (1800 656 463) and 1800RESPECT (1800 737 732) offer specialist information, support and referrals. Services can discuss safety, children’s needs and accommodation pathways. A referral does not guarantee immediate accommodation or service availability.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "1800RESPECT — Homepage / contact",
+          "url": "https://www.1800respect.org.au/",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If you or a child are in immediate danger in Australia, call 000. NSW Domestic Violence Line (1800 656 463) and 1800RESPECT (1800 737 732) offer specialist information, support and referrals. Services can discuss safety, children’s needs and accommodation pathways. A referral does not guarantee immediate accommodation or service availability.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Emergency accommodation and housing",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If you or a child are in immediate danger in Australia, call 000. NSW Domestic Violence Line (1800 656 463) and 1800RESPECT (1800 737 732) offer specialist information, support and referrals. Services can discuss safety, children’s needs and accommodation pathways. A referral does not guarantee immediate accommodation or service availability.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B2",
+        "D1",
+        "A6"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Police / 000",
+          "helps_with": "Emergency response and information about protection orders and offences.",
+          "limitations": "Cannot guarantee that an order removes all risk or determines parenting arrangements.",
+          "contact": "000 · Immediate danger in Australia",
+          "url": "https://www.police.nsw.gov.au/crime/domestic_and_family_violence/children_in_domestic_and_family_violence"
+        },
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        },
+        {
+          "name": "1800RESPECT",
+          "helps_with": "Family violence counselling, information and specialist support referrals.",
+          "limitations": "Not a replacement for emergency services; cannot guarantee safety or accommodation.",
+          "contact": "1800 737 732 · 24/7",
+          "url": "https://www.1800respect.org.au/"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C1",
+      "title": "Psychological Effects of DFV",
+      "category": "Health & Wellbeing",
+      "body": "Experiencing family violence may contribute to fear, anxiety, anger, withdrawal or changes in sleep, learning and relationships. Responses vary with age, experiences, protective relationships and support. A behaviour on its own is not a diagnosis. Safe, stable adult relationships and age-appropriate communication may support recovery.",
+      "official_information": [
+        {
+          "label": "1800RESPECT — Impact of DFV on children",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people/children-and-violence/impacts",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Experiencing family violence may contribute to fear, anxiety, anger, withdrawal or changes in sleep, learning and relationships. Responses vary with age, experiences, protective relationships and support. A behaviour on its own is not a diagnosis. Safe, stable adult relationships and age-appropriate communication may support recovery.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Sydney Children’s Hospitals — Child and adolescent mental health",
+          "url": "https://www.schn.health.nsw.gov.au/kids-health-hub/mental-health",
+          "organisation": "Sydney Children’s Hospitals",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Experiencing family violence may contribute to fear, anxiety, anger, withdrawal or changes in sleep, learning and relationships. Responses vary with age, experiences, protective relationships and support. A behaviour on its own is not a diagnosis. Safe, stable adult relationships and age-appropriate communication may support recovery.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B1",
+        "C2",
+        "C5",
+        "E4"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Mental Health Line / CAMHS",
+          "helps_with": "Information about child mental health assessment, treatment and referrals.",
+          "limitations": "Cannot diagnose a child in a chat or guarantee immediate access to treatment.",
+          "contact": "NSW Mental Health Line · 1800 011 511",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx"
+        },
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C2",
+      "title": "Trauma & Counselling",
+      "category": "Health & Wellbeing",
+      "body": "Persistent emotional or psychological difficulties may warrant a conversation with a GP, school counsellor or child mental health service. NSW CAMHS supports children and families with significant mental health needs. Victims Support Scheme counselling has separate eligibility requirements linked to violent crime. Referral processes, access and suitable support need to be checked with the relevant service.",
+      "official_information": [
+        {
+          "label": "NSW Health — Child and Adolescent Mental Health Services",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx",
+          "organisation": "NSW Health",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Persistent emotional or psychological difficulties may warrant a conversation with a GP, school counsellor or child mental health service. NSW CAMHS supports children and families with significant mental health needs. Victims Support Scheme counselling has separate eligibility requirements linked to violent crime. Referral processes, access and suitable support need to be checked with the relevant service.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "NSW Government — Victims Support Scheme counselling",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme/counselling",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Persistent emotional or psychological difficulties may warrant a conversation with a GP, school counsellor or child mental health service. NSW CAMHS supports children and families with significant mental health needs. Victims Support Scheme counselling has separate eligibility requirements linked to violent crime. Referral processes, access and suitable support need to be checked with the relevant service.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — School Counselling Service",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Persistent emotional or psychological difficulties may warrant a conversation with a GP, school counsellor or child mental health service. NSW CAMHS supports children and families with significant mental health needs. Victims Support Scheme counselling has separate eligibility requirements linked to violent crime. Referral processes, access and suitable support need to be checked with the relevant service.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "C1",
+        "C6",
+        "E4"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Mental Health Line / CAMHS",
+          "helps_with": "Information about child mental health assessment, treatment and referrals.",
+          "limitations": "Cannot diagnose a child in a chat or guarantee immediate access to treatment.",
+          "contact": "NSW Mental Health Line · 1800 011 511",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx"
+        },
+        {
+          "name": "NSW Victims Services",
+          "helps_with": "Counselling and financial assistance under the Victims Support Scheme where eligible.",
+          "limitations": "Cannot guarantee eligibility, reimbursement or funding.",
+          "contact": "See official contact information",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme"
+        },
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C3",
+      "title": "Physical Health & Medical Care",
+      "category": "Health & Wellbeing",
+      "body": "Children may need assessment for injuries, ongoing healthcare, medication or existing health conditions. A GP or appropriate health service can discuss assessment and treatment; serious urgent injuries require emergency medical care. Eligible victims of violent crime may be able to seek financial assistance for certain medical expenses through the Victims Support Scheme. Reimbursement cannot be guaranteed by this website.",
+      "official_information": [
+        {
+          "label": "NSW Government — Victims Support Scheme overview",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need assessment for injuries, ongoing healthcare, medication or existing health conditions. A GP or appropriate health service can discuss assessment and treatment; serious urgent injuries require emergency medical care. Eligible victims of violent crime may be able to seek financial assistance for certain medical expenses through the Victims Support Scheme. Reimbursement cannot be guaranteed by this website.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Financial assistance for immediate needs",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme/financial-assistance-for-immediate-needs",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need assessment for injuries, ongoing healthcare, medication or existing health conditions. A GP or appropriate health service can discuss assessment and treatment; serious urgent injuries require emergency medical care. Eligible victims of violent crime may be able to seek financial assistance for certain medical expenses through the Victims Support Scheme. Reimbursement cannot be guaranteed by this website.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Sydney Children’s Hospitals — Child and adolescent mental health",
+          "url": "https://www.schn.health.nsw.gov.au/kids-health-hub/mental-health",
+          "organisation": "Sydney Children’s Hospitals",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need assessment for injuries, ongoing healthcare, medication or existing health conditions. A GP or appropriate health service can discuss assessment and treatment; serious urgent injuries require emergency medical care. Eligible victims of violent crime may be able to seek financial assistance for certain medical expenses through the Victims Support Scheme. Reimbursement cannot be guaranteed by this website.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B1",
+        "C4",
+        "D5"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Victims Services",
+          "helps_with": "Counselling and financial assistance under the Victims Support Scheme where eligible.",
+          "limitations": "Cannot guarantee eligibility, reimbursement or funding.",
+          "contact": "See official contact information",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C4",
+      "title": "Disability & Developmental Needs",
+      "category": "Health & Wellbeing",
+      "body": "A change of home or school can disrupt disability, developmental or therapy supports. The NDIS early childhood approach connects families of children younger than nine who have developmental delay or disability with support; access to NDIS funding has separate requirements. Ask current providers about continuity and local pathways. Schools have their own responsibilities for reasonable adjustments and educational support.",
+      "official_information": [
+        {
+          "label": "NDIS — Guide to the early childhood approach",
+          "url": "https://ndis.gov.au/applying/children/guide-early-childhood-approach",
+          "organisation": "NDIS",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A change of home or school can disrupt disability, developmental or therapy supports. The NDIS early childhood approach connects families of children younger than nine who have developmental delay or disability with support; access to NDIS funding has separate requirements. Ask current providers about continuity and local pathways. Schools have their own responsibilities for reasonable adjustments and educational support.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "NSW Education — Learning and support journey",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/inclusive-learning-support/primary-school/learning-and-support-journey-disability",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A change of home or school can disrupt disability, developmental or therapy supports. The NDIS early childhood approach connects families of children younger than nine who have developmental delay or disability with support; access to NDIS funding has separate requirements. Ask current providers about continuity and local pathways. Schools have their own responsibilities for reasonable adjustments and educational support.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — School learning and support team",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/inclusive-learning-support/primary-school/how-your-child-can-be-supported-in-primary-school/school-learning-and-support-team",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "A change of home or school can disrupt disability, developmental or therapy supports. The NDIS early childhood approach connects families of children younger than nine who have developmental delay or disability with support; access to NDIS funding has separate requirements. Ask current providers about continuity and local pathways. Schools have their own responsibilities for reasonable adjustments and educational support.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "E6",
+        "E2",
+        "D5",
+        "C3"
+      ],
+      "professional_services": [
+        {
+          "name": "NDIS early childhood partner",
+          "helps_with": "Connections to developmental and disability support and local services.",
+          "limitations": "Does not mean automatic access to NDIS funding.",
+          "contact": "Find a local early childhood partner",
+          "url": "https://ndis.gov.au/applying/children/guide-early-childhood-approach"
+        },
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C5",
+      "title": "Children's Relationships & Feelings",
+      "category": "Health & Wellbeing",
+      "body": "Children may miss or love the other parent, friends, grandparents or their previous school. Their feelings deserve to be heard through respectful, age-appropriate conversations. Children should not be made responsible for deciding whether adults end a violent relationship. Emotional relationships, safety and legal contact arrangements need to be considered separately.",
+      "official_information": [
+        {
+          "label": "1800RESPECT — Children and young people",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may miss or love the other parent, friends, grandparents or their previous school. Their feelings deserve to be heard through respectful, age-appropriate conversations. Children should not be made responsible for deciding whether adults end a violent relationship. Emotional relationships, safety and legal contact arrangements need to be considered separately.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "1800RESPECT — Impact of DFV on children",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people/children-and-violence/impacts",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may miss or love the other parent, friends, grandparents or their previous school. Their feelings deserve to be heard through respectful, age-appropriate conversations. Children should not be made responsible for deciding whether adults end a violent relationship. Emotional relationships, safety and legal contact arrangements need to be considered separately.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting after separation",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may miss or love the other parent, friends, grandparents or their previous school. Their feelings deserve to be heard through respectful, age-appropriate conversations. Children should not be made responsible for deciding whether adults end a violent relationship. Emotional relationships, safety and legal contact arrangements need to be considered separately.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A2",
+        "C1",
+        "E1",
+        "B2"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "NSW Mental Health Line / CAMHS",
+          "helps_with": "Information about child mental health assessment, treatment and referrals.",
+          "limitations": "Cannot diagnose a child in a chat or guarantee immediate access to treatment.",
+          "contact": "NSW Mental Health Line · 1800 011 511",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "C6",
+      "title": "Recovery & Ongoing Support",
+      "category": "Health & Wellbeing",
+      "body": "Children may need time and continuing support after leaving a violent environment. Support can include parent–child communication, school counselling, community mental health care and eligible specialist counselling. Appropriate services depend on individual needs and availability. Leaving does not guarantee that distress will immediately resolve.",
+      "official_information": [
+        {
+          "label": "1800RESPECT — Impact of DFV on children",
+          "url": "https://www.1800respect.org.au/violence-and-abuse/children-and-young-people/children-and-violence/impacts",
+          "organisation": "1800RESPECT",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need time and continuing support after leaving a violent environment. Support can include parent–child communication, school counselling, community mental health care and eligible specialist counselling. Appropriate services depend on individual needs and availability. Leaving does not guarantee that distress will immediately resolve.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Health — Child and Adolescent Mental Health Services",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx",
+          "organisation": "NSW Health",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need time and continuing support after leaving a violent environment. Support can include parent–child communication, school counselling, community mental health care and eligible specialist counselling. Appropriate services depend on individual needs and availability. Leaving does not guarantee that distress will immediately resolve.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "NSW Education — School Counselling Service",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Children may need time and continuing support after leaving a violent environment. Support can include parent–child communication, school counselling, community mental health care and eligible specialist counselling. Appropriate services depend on individual needs and availability. Leaving does not guarantee that distress will immediately resolve.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "C1",
+        "C2",
+        "E4",
+        "D5"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "NSW Mental Health Line / CAMHS",
+          "helps_with": "Information about child mental health assessment, treatment and referrals.",
+          "limitations": "Cannot diagnose a child in a chat or guarantee immediate access to treatment.",
+          "contact": "NSW Mental Health Line · 1800 011 511",
+          "url": "https://www.health.nsw.gov.au/mentalhealth/services/children/Pages/programs-children-teens.aspx"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D1",
+      "title": "Emergency Accommodation",
+      "category": "Housing & Living",
+      "body": "If a parent and children cannot safely stay at home, NSW Domestic Violence Line, Link2home and specialist services can explain crisis accommodation pathways. Services consider circumstances, family size, resources and eligibility. A website cannot book or guarantee an immediately available home. Ask the relevant service what it can offer and which alternatives may be available.",
+      "official_information": [
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If a parent and children cannot safely stay at home, NSW Domestic Violence Line, Link2home and specialist services can explain crisis accommodation pathways. Services consider circumstances, family size, resources and eligibility. A website cannot book or guarantee an immediately available home. Ask the relevant service what it can offer and which alternatives may be available.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Emergency accommodation and housing",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If a parent and children cannot safely stay at home, NSW Domestic Violence Line, Link2home and specialist services can explain crisis accommodation pathways. Services consider circumstances, family size, resources and eligibility. A website cannot book or guarantee an immediately available home. Ask the relevant service what it can offer and which alternatives may be available.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW DCJ — I have children and experience domestic violence",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "If a parent and children cannot safely stay at home, NSW Domestic Violence Line, Link2home and specialist services can explain crisis accommodation pathways. Services consider circumstances, family size, resources and eligibility. A website cannot book or guarantee an immediately available home. Ask the relevant service what it can offer and which alternatives may be available.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B2",
+        "D4",
+        "D3",
+        "E2"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        },
+        {
+          "name": "Homes NSW / Link2home",
+          "helps_with": "Housing assistance, assessment and referrals to relevant accommodation services.",
+          "limitations": "Cannot guarantee an immediate vacancy or eligibility for a specific program.",
+          "contact": "Link2home · 1800 152 152",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D2",
+      "title": "Staying Home, Leaving Violence",
+      "category": "Housing & Living",
+      "body": "Ending a violent relationship does not always require a parent and children to leave their home. NSW Staying Home Leaving Violence may help eligible victims and children remain in a safe home or a home of their choice following specialist risk assessment. Providers may coordinate housing security, legal, financial and children’s support. This option is not suitable for every family and does not replace individual safety assessment.",
+      "official_information": [
+        {
+          "label": "NSW DCJ — Staying Home Leaving Violence",
+          "url": "https://dcj.nsw.gov.au/service-providers/supporting-family-domestic-sexual-violence-services/dfv-programs-funding/staying-home-leaving-violence.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Ending a violent relationship does not always require a parent and children to leave their home. NSW Staying Home Leaving Violence may help eligible victims and children remain in a safe home or a home of their choice following specialist risk assessment. Providers may coordinate housing security, legal, financial and children’s support. This option is not suitable for every family and does not replace individual safety assessment.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Ending a violent relationship does not always require a parent and children to leave their home. NSW Staying Home Leaving Violence may help eligible victims and children remain in a safe home or a home of their choice following specialist risk assessment. Providers may coordinate housing security, legal, financial and children’s support. This option is not suitable for every family and does not replace individual safety assessment.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "B2",
+        "E1",
+        "D3",
+        "A5"
+      ],
+      "professional_services": [
+        {
+          "name": "Staying Home Leaving Violence providers",
+          "helps_with": "Specialist assessment and coordinated support for housing stability and safety.",
+          "limitations": "Remaining at home is not suitable or safe for every family.",
+          "contact": "Check local provider availability",
+          "url": "https://dcj.nsw.gov.au/service-providers/supporting-family-domestic-sexual-violence-services/dfv-programs-funding/staying-home-leaving-violence.html"
+        },
+        {
+          "name": "NSW Domestic Violence Line",
+          "helps_with": "Specialist support, safety planning and referrals for accommodation and local services.",
+          "limitations": "Cannot rule on relocation law or guarantee an accommodation vacancy.",
+          "contact": "1800 656 463 · 24/7",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/my-situation-is---/i-have-children-and-experiencing-domestic-violence.html"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D3",
+      "title": "Temporary & Long-term Housing",
+      "category": "Housing & Living",
+      "body": "Beyond crisis accommodation, options may include social housing, priority assistance, private rental support and Rent Choice Start Safely. Each program has its own income, residency, eligibility and affordability requirements. Start Safely may provide time-limited rental assistance to eligible people. It does not automatically secure housing or provide indefinite funding.",
+      "official_information": [
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Beyond crisis accommodation, options may include social housing, priority assistance, private rental support and Rent Choice Start Safely. Each program has its own income, residency, eligibility and affordability requirements. Start Safely may provide time-limited rental assistance to eligible people. It does not automatically secure housing or provide indefinite funding.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Rent Choice Start Safely",
+          "url": "https://www.nsw.gov.au/departments-and-agencies/homes-nsw/social-housing-resources/rent-choice-start-safely",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Beyond crisis accommodation, options may include social housing, priority assistance, private rental support and Rent Choice Start Safely. Each program has its own income, residency, eligibility and affordability requirements. Start Safely may provide time-limited rental assistance to eligible people. It does not automatically secure housing or provide indefinite funding.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Emergency accommodation and housing",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Beyond crisis accommodation, options may include social housing, priority assistance, private rental support and Rent Choice Start Safely. Each program has its own income, residency, eligibility and affordability requirements. Start Safely may provide time-limited rental assistance to eligible people. It does not automatically secure housing or provide indefinite funding.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "D1",
+        "F1",
+        "F5",
+        "E2"
+      ],
+      "professional_services": [
+        {
+          "name": "Homes NSW / Link2home",
+          "helps_with": "Housing assistance, assessment and referrals to relevant accommodation services.",
+          "limitations": "Cannot guarantee an immediate vacancy or eligibility for a specific program.",
+          "contact": "Link2home · 1800 152 152",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D4",
+      "title": "Housing with Children",
+      "category": "Housing & Living",
+      "body": "Accommodation services differ in their facilities and the families they can support. NSW Core and Cluster refuges provide short-term crisis accommodation and integrated support for women and children escaping domestic violence, including more independent family spaces and child-friendly facilities. Opening status, vacancies and suitability for a particular family must be confirmed by a service. No place is reserved through this prototype.",
+      "official_information": [
+        {
+          "label": "NSW DCJ — Core and Cluster refuges",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/support-programs/core-and-cluster-program.html",
+          "organisation": "NSW DCJ",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Accommodation services differ in their facilities and the families they can support. NSW Core and Cluster refuges provide short-term crisis accommodation and integrated support for women and children escaping domestic violence, including more independent family spaces and child-friendly facilities. Opening status, vacancies and suitability for a particular family must be confirmed by a service. No place is reserved through this prototype.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Accommodation services differ in their facilities and the families they can support. NSW Core and Cluster refuges provide short-term crisis accommodation and integrated support for women and children escaping domestic violence, including more independent family spaces and child-friendly facilities. Opening status, vacancies and suitability for a particular family must be confirmed by a service. No place is reserved through this prototype.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "D1",
+        "C2",
+        "E2",
+        "C4"
+      ],
+      "professional_services": [
+        {
+          "name": "Specialist family violence / crisis accommodation services",
+          "helps_with": "Assessment of accommodation options for families with children.",
+          "limitations": "Cannot guarantee vacancies or suitability for every family.",
+          "contact": "Ask NSW Domestic Violence Line or Link2home",
+          "url": "https://dcj.nsw.gov.au/children-and-families/family-domestic-and-sexual-violence/support-programs/core-and-cluster-program.html"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D5",
+      "title": "Moving & Everyday Stability",
+      "category": "Housing & Living",
+      "body": "Moving can affect school, transport, childcare, healthcare, friendships and existing support. Parenting orders may also raise legal questions about relocation. Housing feasibility needs to be considered alongside legal, educational, emotional and health needs. Different professionals may need to clarify different parts of the same proposed move.",
+      "official_information": [
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Moving can affect school, transport, childcare, healthcare, friendships and existing support. Parenting orders may also raise legal questions about relocation. Housing feasibility needs to be considered alongside legal, educational, emotional and health needs. Different professionals may need to clarify different parts of the same proposed move.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Family Violence Law Help — Can I move away with the children?",
+          "url": "https://familyviolencelaw.gov.au/family-law/arrangements-for-children/can-i-move-away-with-the-children/",
+          "organisation": "Family Violence Law Help",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Moving can affect school, transport, childcare, healthcare, friendships and existing support. Parenting orders may also raise legal questions about relocation. Housing feasibility needs to be considered alongside legal, educational, emotional and health needs. Different professionals may need to clarify different parts of the same proposed move.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Services Australia — Guide for newly separated parents",
+          "url": "https://www.servicesaustralia.gov.au/guide-for-newly-separated-parents?context=60015",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Moving can affect school, transport, childcare, healthcare, friendships and existing support. Parenting orders may also raise legal questions about relocation. Housing feasibility needs to be considered alongside legal, educational, emotional and health needs. Different professionals may need to clarify different parts of the same proposed move.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Enrolment",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/enrolment",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Moving can affect school, transport, childcare, healthcare, friendships and existing support. Parenting orders may also raise legal questions about relocation. Housing feasibility needs to be considered alongside legal, educational, emotional and health needs. Different professionals may need to clarify different parts of the same proposed move.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A4",
+        "E2",
+        "C5",
+        "C4"
+      ],
+      "professional_services": [
+        {
+          "name": "Homes NSW / Link2home",
+          "helps_with": "Housing assistance, assessment and referrals to relevant accommodation services.",
+          "limitations": "Cannot guarantee an immediate vacancy or eligibility for a specific program.",
+          "contact": "Link2home · 1800 152 152",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv"
+        },
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        },
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "D6",
+      "title": "Children's Practical Needs",
+      "category": "Housing & Living",
+      "body": "After leaving home, a family may need bedding, clothing, transport, school supplies or other essentials. The NSW Victims Support Scheme Immediate Needs Support Package may assist eligible people with some relocation, household and security costs. Evidence, eligibility and funding limits apply. This is not an automatic cash payment available to every parent.",
+      "official_information": [
+        {
+          "label": "NSW Government — Immediate Needs Support Package",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme/financial-assistance-for-immediate-needs/immediate-needs-support-package",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "After leaving home, a family may need bedding, clothing, transport, school supplies or other essentials. The NSW Victims Support Scheme Immediate Needs Support Package may assist eligible people with some relocation, household and security costs. Evidence, eligibility and funding limits apply. This is not an automatic cash payment available to every parent.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Financial assistance for immediate needs",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme/financial-assistance-for-immediate-needs",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "After leaving home, a family may need bedding, clothing, transport, school supplies or other essentials. The NSW Victims Support Scheme Immediate Needs Support Package may assist eligible people with some relocation, household and security costs. Evidence, eligibility and funding limits apply. This is not an automatic cash payment available to every parent.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Government — Housing assistance for domestic and family violence",
+          "url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/emergency-housing/housing-help-dfv",
+          "organisation": "NSW Government",
+          "jurisdiction": "NSW / Australia",
+          "supports": "After leaving home, a family may need bedding, clothing, transport, school supplies or other essentials. The NSW Victims Support Scheme Immediate Needs Support Package may assist eligible people with some relocation, household and security costs. Evidence, eligibility and funding limits apply. This is not an automatic cash payment available to every parent.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "D1",
+        "D3",
+        "F5"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW Victims Services",
+          "helps_with": "Counselling and financial assistance under the Victims Support Scheme where eligible.",
+          "limitations": "Cannot guarantee eligibility, reimbursement or funding.",
+          "contact": "See official contact information",
+          "url": "https://www.nsw.gov.au/legal-and-justice/information-for-victims-of-crime/victims-support-scheme"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "E1",
+      "title": "Staying at the Same School",
+      "category": "Education & Care",
+      "body": "Separation or a change of address does not automatically require every child to change schools. Attendance, transport, enrolment boundaries and court orders may affect arrangements. NSW schools consider children’s education and welfare when handling family law matters. A school can explain its process but cannot resolve a family law dispute between parents.",
+      "official_information": [
+        {
+          "label": "NSW Education — Family law guidelines",
+          "url": "https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation or a change of address does not automatically require every child to change schools. Attendance, transport, enrolment boundaries and court orders may affect arrangements. NSW schools consider children’s education and welfare when handling family law matters. A school can explain its process but cannot resolve a family law dispute between parents.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Legal Aid NSW — Parenting after separation",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/parenting-after-separation",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation or a change of address does not automatically require every child to change schools. Attendance, transport, enrolment boundaries and court orders may affect arrangements. NSW schools consider children’s education and welfare when handling family law matters. A school can explain its process but cannot resolve a family law dispute between parents.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Enrolment",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/enrolment",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Separation or a change of address does not automatically require every child to change schools. Attendance, transport, enrolment boundaries and court orders may affect arrangements. NSW schools consider children’s education and welfare when handling family law matters. A school can explain its process but cannot resolve a family law dispute between parents.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A1",
+        "A4",
+        "D2",
+        "E3"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "E2",
+      "title": "Changing Schools",
+      "category": "Education & Care",
+      "body": "When considering a move, check NSW public school enrolment requirements, local intake areas, application documents and support for additional needs. Enrolment procedures can change; confirm the current requirements with the school and official policy. A proposed school transfer may also raise questions about parenting orders and safety. Read the school privacy and family law information alongside enrolment guidance.",
+      "official_information": [
+        {
+          "label": "NSW Education — Enrolment",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/enrolment",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When considering a move, check NSW public school enrolment requirements, local intake areas, application documents and support for additional needs. Enrolment procedures can change; confirm the current requirements with the school and official policy. A proposed school transfer may also raise questions about parenting orders and safety. Read the school privacy and family law information alongside enrolment guidance.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Family law guidelines",
+          "url": "https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When considering a move, check NSW public school enrolment requirements, local intake areas, application documents and support for additional needs. Enrolment procedures can change; confirm the current requirements with the school and official policy. A proposed school transfer may also raise questions about parenting orders and safety. Read the school privacy and family law information alongside enrolment guidance.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "NSW Education — Learning and support journey",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/inclusive-learning-support/primary-school/learning-and-support-journey-disability",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When considering a move, check NSW public school enrolment requirements, local intake areas, application documents and support for additional needs. Enrolment procedures can change; confirm the current requirements with the school and official policy. A proposed school transfer may also raise questions about parenting orders and safety. Read the school privacy and family law information alongside enrolment guidance.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A4",
+        "D5",
+        "E3",
+        "C4"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "E3",
+      "title": "School Safety & Privacy",
+      "category": "Education & Care",
+      "body": "Concerns about a new school’s identity, a child’s location or collection arrangements need individual attention. NSW Education’s Family Law Guidelines address information disclosure, court orders, AVOs and parent involvement. A school cannot promise that all enrolment information will always be withheld; disclosure rules and protections for addresses and contact details depend on the circumstances. Ask the school and a legal professional to review relevant documents and safety concerns.",
+      "official_information": [
+        {
+          "label": "NSW Education — Family law guidelines",
+          "url": "https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Concerns about a new school’s identity, a child’s location or collection arrangements need individual attention. NSW Education’s Family Law Guidelines address information disclosure, court orders, AVOs and parent involvement. A school cannot promise that all enrolment information will always be withheld; disclosure rules and protections for addresses and contact details depend on the circumstances. Ask the school and a legal professional to review relevant documents and safety concerns.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Legal Aid NSW — AVOs and Family law",
+          "url": "https://www.legalaid.nsw.gov.au/my-problem-is-about/apprehended-violence-order-avo/avos-and-family-law",
+          "organisation": "Legal Aid NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Concerns about a new school’s identity, a child’s location or collection arrangements need individual attention. NSW Education’s Family Law Guidelines address information disclosure, court orders, AVOs and parent involvement. A school cannot promise that all enrolment information will always be withheld; disclosure rules and protections for addresses and contact details depend on the circumstances. Ask the school and a legal professional to review relevant documents and safety concerns.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "eSafety — Supporting children experiencing domestic violence and tech abuse",
+          "url": "https://www.esafety.gov.au/key-topics/domestic-family-violence/support-service-resources/supporting-kids-dealing-with-tech-abuse",
+          "organisation": "eSafety",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Concerns about a new school’s identity, a child’s location or collection arrangements need individual attention. NSW Education’s Family Law Guidelines address information disclosure, court orders, AVOs and parent involvement. A school cannot promise that all enrolment information will always be withheld; disclosure rules and protections for addresses and contact details depend on the circumstances. Ask the school and a legal professional to review relevant documents and safety concerns.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A5",
+        "A3",
+        "B5",
+        "B4",
+        "E2"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "Legal Aid NSW / LawAccess NSW",
+          "helps_with": "Legal information and referrals; lawyer appointments and legal aid where eligible.",
+          "limitations": "Cannot decide a court outcome or guarantee eligibility for representation.",
+          "contact": "1300 888 529 · Mon–Fri, 9am–5pm, excluding public holidays",
+          "url": "https://www.legalaid.nsw.gov.au/contact-us"
+        }
+      ],
+      "featured_demo": true
+    },
+    {
+      "id": "E4",
+      "title": "School Counselling",
+      "category": "Education & Care",
+      "body": "NSW public schools’ counselling service includes school counsellors and psychologists. They can support students with emotional, learning, family relationship and adjustment needs, working with teachers and external professionals. Parents can ask their school how to contact the service. The support available depends on the student’s needs and school arrangements.",
+      "official_information": [
+        {
+          "label": "NSW Education — School Counselling Service",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "NSW public schools’ counselling service includes school counsellors and psychologists. They can support students with emotional, learning, family relationship and adjustment needs, working with teachers and external professionals. Parents can ask their school how to contact the service. The support available depends on the student’s needs and school arrangements.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Domestic and family violence",
+          "url": "https://education.nsw.gov.au/schooling/school-community/child-protection/domestic-and-family-violence",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "NSW public schools’ counselling service includes school counsellors and psychologists. They can support students with emotional, learning, family relationship and adjustment needs, working with teachers and external professionals. Parents can ask their school how to contact the service. The support available depends on the student’s needs and school arrangements.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "C1",
+        "C2",
+        "C6",
+        "B1"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "E5",
+      "title": "Childcare & Early Childhood",
+      "category": "Education & Care",
+      "body": "Changes in family life may affect childcare, before- and after-school care, preschool places and fees. NSW Education provides information about early childhood services and preschool fee relief. The federal Child Care Subsidy is a separate program with its own conditions. Neither funding eligibility nor a place at a particular centre can be guaranteed here.",
+      "official_information": [
+        {
+          "label": "NSW Education — Before and After School Care",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/going-to-school/primary-schools/before-and-after-school-care",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Changes in family life may affect childcare, before- and after-school care, preschool places and fees. NSW Education provides information about early childhood services and preschool fee relief. The federal Child Care Subsidy is a separate program with its own conditions. Neither funding eligibility nor a place at a particular centre can be guaranteed here.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — Fees and subsidies",
+          "url": "https://education.nsw.gov.au/early-childhood-education/information-for-parents-and-carers/early-childhood-education-and-care-fees-and-subsidies",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Changes in family life may affect childcare, before- and after-school care, preschool places and fees. NSW Education provides information about early childhood services and preschool fee relief. The federal Child Care Subsidy is a separate program with its own conditions. Neither funding eligibility nor a place at a particular centre can be guaranteed here.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Child Care Subsidy",
+          "url": "https://www.servicesaustralia.gov.au/child-care-subsidy",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Changes in family life may affect childcare, before- and after-school care, preschool places and fees. NSW Education provides information about early childhood services and preschool fee relief. The federal Child Care Subsidy is a separate program with its own conditions. Neither funding eligibility nor a place at a particular centre can be guaranteed here.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "F4",
+        "D5",
+        "F1"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "E6",
+      "title": "Additional Learning Needs",
+      "category": "Education & Care",
+      "body": "When a child changes schools, ask how existing learning adjustments, psychological support or disability-related needs can be supported. NSW public school Learning and Support Teams can discuss adjustments with families, teachers and professionals. NDIS supports differ from a school’s educational responsibilities. Funding and service arrangements should not be assumed to transfer unchanged.",
+      "official_information": [
+        {
+          "label": "NSW Education — Learning and support journey",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/inclusive-learning-support/primary-school/learning-and-support-journey-disability",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When a child changes schools, ask how existing learning adjustments, psychological support or disability-related needs can be supported. NSW public school Learning and Support Teams can discuss adjustments with families, teachers and professionals. NDIS supports differ from a school’s educational responsibilities. Funding and service arrangements should not be assumed to transfer unchanged.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NSW Education — School learning and support team",
+          "url": "https://education.nsw.gov.au/schooling/parents-and-carers/inclusive-learning-support/primary-school/how-your-child-can-be-supported-in-primary-school/school-learning-and-support-team",
+          "organisation": "NSW Education",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When a child changes schools, ask how existing learning adjustments, psychological support or disability-related needs can be supported. NSW public school Learning and Support Teams can discuss adjustments with families, teachers and professionals. NDIS supports differ from a school’s educational responsibilities. Funding and service arrangements should not be assumed to transfer unchanged.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "NDIS — Guide to the early childhood approach",
+          "url": "https://ndis.gov.au/applying/children/guide-early-childhood-approach",
+          "organisation": "NDIS",
+          "jurisdiction": "NSW / Australia",
+          "supports": "When a child changes schools, ask how existing learning adjustments, psychological support or disability-related needs can be supported. NSW public school Learning and Support Teams can discuss adjustments with families, teachers and professionals. NDIS supports differ from a school’s educational responsibilities. Funding and service arrangements should not be assumed to transfer unchanged.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        }
+      ],
+      "related_topic_ids": [
+        "C4",
+        "E2",
+        "E4",
+        "D5"
+      ],
+      "professional_services": [
+        {
+          "name": "NSW public school / School Counselling Service",
+          "helps_with": "Enrolment, school safety, learning and emotional wellbeing support.",
+          "limitations": "Cannot settle family law disputes or guarantee all enrolment information remains confidential.",
+          "contact": "Contact the relevant school",
+          "url": "https://education.nsw.gov.au/schooling/school-community/school-counselling-service/about-the-school-counselling-service"
+        },
+        {
+          "name": "NDIS early childhood partner",
+          "helps_with": "Connections to developmental and disability support and local services.",
+          "limitations": "Does not mean automatic access to NDIS funding.",
+          "contact": "Find a local early childhood partner",
+          "url": "https://ndis.gov.au/applying/children/guide-early-childhood-approach"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "F1",
+      "title": "Parenting Payment",
+      "category": "Financial Support",
+      "body": "Parenting Payment is income support that may be available to an eligible principal carer of a young child. Conditions include relationship status, principal carer responsibilities, the youngest child’s age, income, assets and residency. Age limits differ for single and partnered carers; check the current official eligibility rules. Separation does not automatically establish entitlement.",
+      "official_information": [
+        {
+          "label": "Services Australia — Parenting Payment",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting Payment is income support that may be available to an eligible principal carer of a young child. Conditions include relationship status, principal carer responsibilities, the youngest child’s age, income, assets and residency. Age limits differ for single and partnered carers; check the current official eligibility rules. Separation does not automatically establish entitlement.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Services Australia — Who can get Parenting Payment",
+          "url": "https://www.servicesaustralia.gov.au/who-can-get-parenting-payment?context=22196",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Parenting Payment is income support that may be available to an eligible principal carer of a young child. Conditions include relationship status, principal carer responsibilities, the youngest child’s age, income, assets and residency. Age limits differ for single and partnered carers; check the current official eligibility rules. Separation does not automatically establish entitlement.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "F2",
+        "F5",
+        "D3"
+      ],
+      "professional_services": [
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "F2",
+      "title": "Family Tax Benefit",
+      "category": "Financial Support",
+      "body": "Family Tax Benefit has Part A and Part B and helps eligible families with the costs of raising children. Eligibility and payment amounts depend on factors including children’s ages, care percentages, income and other requirements. Separation or a change in care may require updated information. Services Australia can explain how child support may affect Family Tax Benefit.",
+      "official_information": [
+        {
+          "label": "Services Australia — Family Tax Benefit",
+          "url": "https://www.servicesaustralia.gov.au/family-tax-benefit",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Family Tax Benefit has Part A and Part B and helps eligible families with the costs of raising children. Eligibility and payment amounts depend on factors including children’s ages, care percentages, income and other requirements. Separation or a change in care may require updated information. Services Australia can explain how child support may affect Family Tax Benefit.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Guide for newly separated parents",
+          "url": "https://www.servicesaustralia.gov.au/guide-for-newly-separated-parents?context=60015",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Family Tax Benefit has Part A and Part B and helps eligible families with the costs of raising children. Eligibility and payment amounts depend on factors including children’s ages, care percentages, income and other requirements. Separation or a change in care may require updated information. Services Australia can explain how child support may affect Family Tax Benefit.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "F1",
+        "F3",
+        "F4"
+      ],
+      "professional_services": [
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "F3",
+      "title": "Child Support",
+      "category": "Financial Support",
+      "body": "Child support concerns the financial costs of raising children after separation. Services Australia can explain assessments, collection and how care percentages may affect payments. Parenting orders and child support are different matters; contact arrangements alone do not establish a payment amount. Where seeking child support creates family violence concerns, ask Services Australia about possible Maintenance Action Test exemptions; approval requires assessment.",
+      "official_information": [
+        {
+          "label": "Services Australia — Learning about child support",
+          "url": "https://www.servicesaustralia.gov.au/learning-about-child-support?context=60015",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child support concerns the financial costs of raising children after separation. Services Australia can explain assessments, collection and how care percentages may affect payments. Parenting orders and child support are different matters; contact arrangements alone do not establish a payment amount. Where seeking child support creates family violence concerns, ask Services Australia about possible Maintenance Action Test exemptions; approval requires assessment.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Maintenance action exemption (including DFV)",
+          "url": "https://www.servicesaustralia.gov.au/why-you-need-to-apply-for-child-support-while-you-get-ftb-part?context=21921",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child support concerns the financial costs of raising children after separation. Services Australia can explain assessments, collection and how care percentages may affect payments. Parenting orders and child support are different matters; contact arrangements alone do not establish a payment amount. Where seeking child support creates family violence concerns, ask Services Australia about possible Maintenance Action Test exemptions; approval requires assessment.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Guide for newly separated parents",
+          "url": "https://www.servicesaustralia.gov.au/guide-for-newly-separated-parents?context=60015",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child support concerns the financial costs of raising children after separation. Services Australia can explain assessments, collection and how care percentages may affect payments. Parenting orders and child support are different matters; contact arrangements alone do not establish a payment amount. Where seeking child support creates family violence concerns, ask Services Australia about possible Maintenance Action Test exemptions; approval requires assessment.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "A1",
+        "A2",
+        "F2",
+        "F6"
+      ],
+      "professional_services": [
+        {
+          "name": "Services Australia Child Support",
+          "helps_with": "Information about child support assessment, collection and family violence concerns.",
+          "limitations": "Cannot promise an exemption or a particular assessed amount.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/learning-about-child-support?context=60015"
+        },
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": true
+    },
+    {
+      "id": "F4",
+      "title": "Child Care Subsidy",
+      "category": "Financial Support",
+      "body": "Child Care Subsidy helps eligible families pay for approved childcare. Conditions include the child’s age, approved care, fee liability and residency, along with other current program rules. Families experiencing violence and temporary financial hardship can also ask about Additional Child Care Subsidy. Further eligibility assessment is required; this site cannot approve support.",
+      "official_information": [
+        {
+          "label": "Services Australia — Child Care Subsidy",
+          "url": "https://www.servicesaustralia.gov.au/child-care-subsidy",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child Care Subsidy helps eligible families pay for approved childcare. Conditions include the child’s age, approved care, fee liability and residency, along with other current program rules. Families experiencing violence and temporary financial hardship can also ask about Additional Child Care Subsidy. Further eligibility assessment is required; this site cannot approve support.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Additional Child Care Subsidy",
+          "url": "https://www.servicesaustralia.gov.au/additional-child-care-subsidy",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child Care Subsidy helps eligible families pay for approved childcare. Conditions include the child’s age, approved care, fee liability and residency, along with other current program rules. Families experiencing violence and temporary financial hardship can also ask about Additional Child Care Subsidy. Further eligibility assessment is required; this site cannot approve support.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Temporary Financial Hardship",
+          "url": "https://www.servicesaustralia.gov.au/temporary-financial-hardship-additional-child-care-subsidy?context=41866",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Child Care Subsidy helps eligible families pay for approved childcare. Conditions include the child’s age, approved care, fee liability and residency, along with other current program rules. Families experiencing violence and temporary financial hardship can also ask about Additional Child Care Subsidy. Further eligibility assessment is required; this site cannot approve support.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "E5",
+        "F1",
+        "F5"
+      ],
+      "professional_services": [
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "F5",
+      "title": "Crisis & Leaving Violence Payments",
+      "category": "Financial Support",
+      "body": "Crisis Payment and the Leaving Violence Program are separate programs. Crisis Payment has requirements for eligible extreme circumstances and severe financial hardship. The Leaving Violence Program provides financial and other support to eligible people experiencing intimate partner violence who are planning or have made a change in living arrangements. Each has its own application rules; leaving a relationship does not automatically qualify a person.",
+      "official_information": [
+        {
+          "label": "Services Australia — Crisis Payment DFV",
+          "url": "https://www.servicesaustralia.gov.au/crisis-payment-for-extreme-circumstances-family-and-domestic-violence",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Crisis Payment and the Leaving Violence Program are separate programs. Crisis Payment has requirements for eligible extreme circumstances and severe financial hardship. The Leaving Violence Program provides financial and other support to eligible people experiencing intimate partner violence who are planning or have made a change in living arrangements. Each has its own application rules; leaving a relationship does not automatically qualify a person.",
+          "last_checked": "2026-11-01",
+          "source_pack_date": "2026-11-01",
+          "review_status": "Official page read during implementation; specialist review still required"
+        },
+        {
+          "label": "Leaving Violence Program — Eligibility and support",
+          "url": "https://leavingviolenceprogram.org.au/",
+          "organisation": "Leaving Violence Program",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Crisis Payment and the Leaving Violence Program are separate programs. Crisis Payment has requirements for eligible extreme circumstances and severe financial hardship. The Leaving Violence Program provides financial and other support to eligible people experiencing intimate partner violence who are planning or have made a change in living arrangements. Each has its own application rules; leaving a relationship does not automatically qualify a person.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "D1",
+        "D3",
+        "D6",
+        "F1"
+      ],
+      "professional_services": [
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        },
+        {
+          "name": "Leaving Violence Program",
+          "helps_with": "Financial and other support for eligible people changing living arrangements due to intimate partner violence.",
+          "limitations": "Cannot guarantee eligibility or an approved payment.",
+          "contact": "See official program information",
+          "url": "https://leavingviolenceprogram.org.au/"
+        }
+      ],
+      "featured_demo": false
+    },
+    {
+      "id": "F6",
+      "title": "Financial Safety",
+      "category": "Financial Support",
+      "body": "Financial abuse can involve restricting access to money, preventing work, creating debt, controlling online accounts or continuing financial pressure after separation. Official information and specialist services can help explain options. Child support, bank accounts and shared devices may create connected safety concerns. Individual professional advice is preferable to a universal set of account-changing instructions.",
+      "official_information": [
+        {
+          "label": "Moneysmart — Financial abuse",
+          "url": "https://moneysmart.gov.au/family-and-relationships/financial-abuse",
+          "organisation": "Moneysmart",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Financial abuse can involve restricting access to money, preventing work, creating debt, controlling online accounts or continuing financial pressure after separation. Official information and specialist services can help explain options. Child support, bank accounts and shared devices may create connected safety concerns. Individual professional advice is preferable to a universal set of account-changing instructions.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Services Australia — Maintenance action exemption (including DFV)",
+          "url": "https://www.servicesaustralia.gov.au/why-you-need-to-apply-for-child-support-while-you-get-ftb-part?context=21921",
+          "organisation": "Services Australia",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Financial abuse can involve restricting access to money, preventing work, creating debt, controlling online accounts or continuing financial pressure after separation. Official information and specialist services can help explain options. Child support, bank accounts and shared devices may create connected safety concerns. Individual professional advice is preferable to a universal set of account-changing instructions.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        },
+        {
+          "label": "Service NSW — DFV support guide",
+          "url": "https://www.service.nsw.gov.au/guide/domestic-and-family-violence",
+          "organisation": "Service NSW",
+          "jurisdiction": "NSW / Australia",
+          "supports": "Financial abuse can involve restricting access to money, preventing work, creating debt, controlling online accounts or continuing financial pressure after separation. Official information and specialist services can help explain options. Child support, bank accounts and shared devices may create connected safety concerns. Individual professional advice is preferable to a universal set of account-changing instructions.",
+          "last_checked": null,
+          "source_pack_date": "2026-11-01",
+          "review_status": "Link supplied in course content pack; not individually rechecked"
+        }
+      ],
+      "related_topic_ids": [
+        "F3",
+        "B5",
+        "D3"
+      ],
+      "professional_services": [
+        {
+          "name": "1800RESPECT",
+          "helps_with": "Family violence counselling, information and specialist support referrals.",
+          "limitations": "Not a replacement for emergency services; cannot guarantee safety or accommodation.",
+          "contact": "1800 737 732 · 24/7",
+          "url": "https://www.1800respect.org.au/"
+        },
+        {
+          "name": "Services Australia / Centrelink",
+          "helps_with": "Information about payments, eligibility, family violence considerations and social work support.",
+          "limitations": "Cannot guarantee payment eligibility, amounts or approval times.",
+          "contact": "See official contact information",
+          "url": "https://www.servicesaustralia.gov.au/parenting-payment"
+        }
+      ],
+      "featured_demo": false
+    }
+  ]
+}

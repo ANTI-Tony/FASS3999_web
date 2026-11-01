@@ -1,175 +1,96 @@
-import { useMemo, useState } from 'react';
-import { icons, summaryFields, topics } from './data.jsx';
+import { useEffect, useRef, useState } from 'react';
+import { categories, pages, pageById, domains, icons, supportCards } from './data.jsx';
+import { initialSummary, fieldLabels, sampleScenario, sampleUpdate, contactProposal, differences, confirmVersion, disclosureOptions, defaultDisclosures, composeDraft, isEnglishDemoText } from './demo-model.mjs';
 
-const topicByTitle = Object.fromEntries(topics.map((topic) => [topic.title, topic]));
-
-function Icon({ name, className = '' }) {
-  return <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icons[name]}</svg>;
+const paneNames = {hub:'Information Hub',ai:'AI Navigator',summary:'My Case Summary'};
+function Icon({name}) {return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icons[name]}</svg>;}
+function ExternalLink({url,children}) {return <a href={url} target="_blank" rel="noreferrer">{children} <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a>;}
+function EmergencyNote() {return <p className="emergency-note">Immediate danger in Australia: <a href="tel:000">000</a>. Specialist support: <a href="tel:1800656463">NSW Domestic Violence Line · 1800 656 463</a> or <a href="tel:1800737732">1800RESPECT · 1800 737 732</a>.</p>;}
+function Header({onOpen,onHome}) {return <header className="topbar"><a className="brand" href="#home" onClick={e=>{e.preventDefault();onHome();}}><span className="brand-mark"><Icon name="mental"/></span><span><span className="brand-name">Beyond Stay or Leave</span><span className="brand-sub">Information · Understanding · Support</span></span></a><nav className="top-actions" aria-label="Main navigation">{Object.entries(paneNames).map(([id,name])=><button key={id} className="toplink" onClick={()=>onOpen(id)}>{name}</button>)}</nav><button className="exit" title="Leaves this site. Does not clear browser history, account sync or downloads." onClick={()=>window.location.replace('https://www.google.com/')}><span aria-hidden="true">↗</span> Quick Exit</button></header>;}
+function Privacy() {return <details className="privacy"><summary>How my information is handled</summary><div className="privacy-content"><p>This is a classroom prototype. The Information Hub provides public information. AI Navigator and My Case Summary use a prepared fictional family, with no live AI and no secure long-term case storage. Please do not enter real experiences, children’s names, schools, addresses, or medical or legal documents.</p><p>Navigator conversations do not create a case file. Summary records are separate and change only after confirmation. No input is sent to an AI provider or organisation. No login is required. This tab keeps demonstration state in memory; refreshing resets it. There is no account, cross-device recovery or encrypted record system.</p><p>Quick Exit leaves this website but does not erase browser history, account sync, downloads or device traces. Shared devices, accounts and clipboards may expose information. A future real service would need specialist privacy and safety design, access controls, deletion processes and ongoing maintenance.</p></div></details>;}
+function Home({onCategory,onSample,onOpen,onQuestion}) {
+ const [question,setQuestion]=useState('');
+ return <main id="home"><section className="intro"><div><div className="eyebrow">A place to find your next clear step</div><h1>Understand the changes your child may face.<br/>Then explore your options.</h1><p>Connected information about children, family changes and support in NSW.</p></div><div className="demo-note"><span className="demo-dot"/>Classroom prototype · Fictional data only</div></section>
+ <section className="section" aria-labelledby="hub-heading"><div className="section-head"><div><div className="eyebrow">01 · Verified Information Hub</div><h2 id="hub-heading">Explore what matters to your child</h2><p className="section-sub">Six areas, 36 topics. Read the context and check the official information.</p></div><span className="count">36 topics</span></div><div className="hub-grid">{categories.map(c=><button className="hub-card" key={c.id} onClick={()=>onCategory(c.id)}><span className="card-top"><span className="icon"><Icon name={c.icon}/></span><span className="arrow">↗</span></span><strong>{c.title}</strong><small>{c.short}</small><span className="topic-count">6 topics →</span></button>)}</div></section>
+ <section className="section navigator" aria-labelledby="ai-heading"><div className="section-head"><div className="nav-title"><span className="icon"><Icon name="navigator"/></span><div><div className="eyebrow">02 · AI Information Navigator</div><h2 id="ai-heading">See how the questions connect</h2><p className="section-sub">Explore a prepared answer, related topics and professional support.</p></div></div></div><p className="small-copy">One fictional family. Six connected concerns. A scripted demonstration, with no live AI.</p><div className="suggestions"><button className="primary" onClick={onSample}>Try a sample scenario <span aria-hidden="true">→</span></button></div><form className="askbox" onSubmit={e=>{e.preventDefault();onQuestion(question);setQuestion('');}}><label className="sr-only" htmlFor="home-question">Demo question</label><textarea id="home-question" value={question} onChange={e=>setQuestion(e.target.value)} placeholder="Demo questions only. Do not enter personal information." rows="1" maxLength={2000}/><button className="send" aria-label="Submit demo question">↑</button></form></section>
+ <section className="section" aria-labelledby="case-heading"><div className="section-head"><div><div className="eyebrow">03 · My Case Summary</div><h2 id="case-heading">Organise a story you have confirmed</h2><p className="section-sub">Preview changes, explore versions and prepare a message for the right service.</p></div></div><div className="case-card"><div className="case-copy"><span className="icon"><Icon name="document"/></span><div><h3>My Summary Workspace</h3><p>The same fictional family, in a separate demonstration record.</p></div></div><button className="primary" onClick={()=>onOpen('summary')}>Open Workspace →</button></div><Privacy/></section><EmergencyNote/><Footer/></main>;
 }
-
-function ExitButton() {
-  return <button className="exit" onClick={() => window.location.replace('about:blank')}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>Quick Exit</button>;
+function Footer(){return <footer className="footer"><span><strong>FASS3999 · Classroom prototype</strong><br/>No live AI · No real case data · Not professional advice</span><span>Fictional demo state resets on refresh.<br/>Content requires specialist review before real-world use.</span></footer>;}
+function TopicLinks({ids,onTopic}) {return <div className="related">{ids.map(id=><button key={id} onClick={()=>onTopic(id)}>{id} · {pageById[id].title} →</button>)}</div>;}
+function ServiceCards({services}) {return <div className="service-grid">{services.map(s=><article className="service-card" key={s.name}><h4>{s.name}</h4><p className="service-contact">{s.contact}</p><p><b>Can help with</b><br/>{s.helps_with}</p><p><b>Limits</b><br/>{s.limitations}</p><ExternalLink url={s.url}>Official service information</ExternalLink></article>)}</div>;}
+function HubPane({selection,onCategory,onTopic,backToAI,bodyRef}) {
+ const [search,setSearch]=useState('');
+ const page=pageById[selection];const category=categories.find(c=>c.id===(page?.id[0]||selection));
+ const results=pages.filter(p=>(!category||p.id.startsWith(category.id))&&`${p.title} ${p.body}`.toLowerCase().includes(search.toLowerCase()));
+ return <article className="pane"><div className="pane-head"><div><div className="eyebrow">Verified Information Hub</div><h2>{page ? page.title : category?.title||'Browse all topics'}</h2></div><span className="version-pill">NSW / Australia</span></div><div className="pane-body hub-body" ref={bodyRef}>
+ {backToAI&&<button className="back-answer" onClick={backToAI}>← Back to AI answer</button>}
+ <nav className="breadcrumbs" aria-label="Hub breadcrumb"><button onClick={()=>onCategory('all')}>All topics</button>{category&&<><span>/</span><button onClick={()=>onCategory(category.id)}>{category.title}</button></>}{page&&<><span>/</span><span>{page.id}</span></>}</nav>
+ {page ? <div key={page.id}><span className="eyebrow">{page.id} · {page.category}</span><h1 className="article-title">{page.title}</h1><section className="article-section first-section"><h3>What You Need to Know</h3><p className="topic-body">{page.body}</p>{page.id==='A4'&&<aside className="context-note"><b>Fictional example</b><p>A mother is considering moving from Sydney to Wollongong with her eight-year-old daughter and four-year-old son. She does not know whether parenting orders exist. Housing, school privacy, safety and the legal consequences each need to be considered.</p><TopicLinks ids={['A3','D5','E2','E3','B2']} onTopic={onTopic}/></aside>}</section>
+ <section className="article-section"><h3>Official Information</h3><div className="source-list">{page.official_information.map(s=><div key={s.url}><ExternalLink url={s.url}>{s.label}</ExternalLink></div>)}</div></section>
+ <section className="article-section"><h3>Related Topics</h3><TopicLinks ids={page.related_topic_ids} onTopic={onTopic}/></section>
+ {page.professional_services.length>0&&<section className="article-section"><h3>Professional Services</h3><ServiceCards services={page.professional_services}/></section>}
+ <p className="review-stamp">Course content pack: 1 November 2026 · General information · Check current official rules and individual eligibility.</p></div>
+ : <><h1 className="article-title">{category?.title||'Find a topic'}</h1><p className="small-copy">{category?'Choose one of six topics below.':'Explore six connected areas, or search all 36 topics.'}</p><label className="search-label">Search {category?'this area':'all topics'}<input type="search" value={search} onChange={e=>setSearch(e.target.value)} placeholder="Try school, housing or parenting"/></label>{!category&&<div className="category-pills">{categories.map(c=><button className="chip" key={c.id} onClick={()=>{setSearch('');onCategory(c.id);}}>{c.title}</button>)}</div>}<div className="topic-list">{results.map(p=><button key={p.id} onClick={()=>onTopic(p.id)}><span className="topic-id">{p.id}</span><span><strong>{p.title}</strong><small>{p.category}</small></span><span className="arrow">→</span></button>)}</div>{!results.length&&<p>No topics match this search. Try a different word.</p>}</>}
+ </div></article>;
 }
-
-function Header({ onHome, onOpen }) {
-  return <header className="topbar">
-    <a href="#home" className="brand" aria-label="Beyond Stay or Leave home" onClick={(event) => { event.preventDefault(); onHome(); }}>
-      <span className="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M12 20s-7-4.3-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.7-7 10-7 10Z"/><path d="M8 12h2l1.2-2.2 2 4.4 1.1-2.2H16"/></svg></span>
-      <span><span className="brand-name">Beyond Stay or Leave</span><span className="brand-sub">Information · Understanding · Support</span></span>
-    </a>
-    <nav className="top-actions" aria-label="Main navigation"><button className="toplink" onClick={() => onOpen('hub')}>Information Hub</button><button className="toplink" onClick={() => onOpen('ai')}>AI Navigator</button><button className="toplink" onClick={() => onOpen('summary')}>My Case Summary</button><ExitButton /></nav>
-  </header>;
+function DomainSources({ids}) {const sources=[...new Map(ids.flatMap(id=>pageById[id].official_information).map(s=>[s.url,s])).values()];return <div className="source-list">{sources.map(s=><ExternalLink key={s.url} url={s.url}>{s.label}</ExternalLink>)}</div>;}
+function AnswerCard({onTopic}) {return <div className="answer-card"><div className="review-stamp">Prepared fictional response · No live AI</div><h3>Your Concerns</h3><div className="concern-tags">{domains.map(d=><span key={d.title}>{d.title}</span>)}</div><h3>Short Integrated Answer</h3><p>Your question brings together relocation law, school information, safety during separation, both children’s wellbeing, housing and living costs. These issues may affect one another: finding somewhere to stay does not resolve the legal questions, and a school transfer may also raise safety and privacy questions. Official information can explain general rules and support pathways. It cannot establish whether this move is lawful, what a school may disclose, payment eligibility or the safest option for this fictional family.</p><h3>Read More</h3><div className="domain-list">{domains.map(d=><details key={d.title}><summary>{d.title}</summary><p>{d.text}</p><div className="connection"><b>How the issues may connect</b><p>{d.connection}</p></div><TopicLinks ids={d.ids} onTopic={onTopic}/><DomainSources ids={d.sourceIds}/></details>)}</div>
+ <details className="map-details"><summary>View Information Map</summary><p className="small-copy">Select a topic to open its exact Information Hub page.</p><div className="information-map"><div className="map-center"><Icon name="navigator"/><strong>Mother’s concerns about moving with children</strong></div><div className="map-nodes">{domains.map(d=><div className="map-node" key={d.title}><strong>{d.title}</strong><TopicLinks ids={d.ids.slice(0,d.title==='Financial Support'?5:2)} onTopic={onTopic}/></div>)}</div></div></details>
+ <details className="uncertain"><summary>What Remains Uncertain</summary><ul><li>Whether parenting orders exist, their terms and the consequences of relocation: individual legal review is needed.</li><li>Enrolment and information disclosure under any orders or AVO: the school and legal professionals must consider the circumstances.</li><li>Continuity of the son’s developmental support and access requirements: check with providers.</li><li>Housing vacancies and payment eligibility or amounts: the responsible services must confirm.</li><li>Current and separation-related risks: specialist family violence assessment is needed.</li></ul></details>
+ <details className="professional-details"><summary>Relevant Professional Support</summary><p className="small-copy">These services address different questions. This is not a required sequence, an appointment or an automatic referral.</p><ServiceCards services={supportCards}/></details></div>;}
+function NavigatorPane({messages,onSample,onQuestion,onTopic}) {
+ const [value,setValue]=useState('');
+ return <article className="pane"><div className="pane-head"><div><div className="eyebrow">AI Information Navigator</div><h2>Understand connected questions</h2></div><span className="version-pill">Scripted demo</span></div><div className="navigator-body"><div className="chat-scroll" aria-label="Navigator conversation"><div className="intro-message"><h3>A little context can make things clearer.</h3><p>Explore public information using a fictional family. No live AI is connected. Do not enter real personal details.</p><button className="primary" onClick={onSample}>Try a sample scenario →</button></div>{messages.map((m,i)=>m.type==='sample'?<div key={i}><div className="bubble user">{sampleScenario}</div><AnswerCard onTopic={onTopic}/></div>:<div className="demo-limitation" role="status" key={i}><b>Demo limitation</b><p>This version is not a help service and cannot answer personal or unrecognised questions. Please do not continue entering private family violence or child information. Your submitted text has not been added to the conversation or a case record. Try the prepared fictional scenario instead.</p><EmergencyNote/></div>)}</div><div className="composer"><form onSubmit={e=>{e.preventDefault();if(value.trim()){onQuestion(value);setValue('');}}}><label className="sr-only" htmlFor="navigator-question">Demo question</label><textarea id="navigator-question" value={value} onChange={e=>setValue(e.target.value)} rows="2" maxLength={2000} placeholder="Demo questions only. Do not enter personal information."/><button className="send" aria-label="Submit demo question">↑</button></form><span>No live AI · No automatic sharing with My Case Summary</span></div></div></article>;
 }
-
-function HomePage({ onOpen, onAsk }) {
-  const [question, setQuestion] = useState('');
-  const ask = (event) => { event.preventDefault(); onAsk(question.trim() || 'I am considering moving to another city with my 8-year-old daughter because my husband knows where we live. She would need to change schools, and he says I cannot take her without permission.'); };
-  const fill = (value) => setQuestion(value);
-  return <main id="home">
-    <section className="intro"><div><div className="eyebrow">A place to find your next clear step</div><h1>Understand the changes your child may face.<br/>Then decide what to do next.</h1><p>Find information, understand complex questions and organise support notes in one place.</p></div><div className="demo-note"><span className="demo-dot"/>Research prototype · fictional scenarios · no real data collected</div></section>
-    <section className="section" aria-labelledby="hub-heading"><div className="section-head"><div><div className="eyebrow">01 · Verified Information Hub</div><h2 id="hub-heading">I want to understand what changes my child may face</h2><p className="section-sub">Start with one topic and explore how it connects to others.</p></div><span className="count">6 topics</span></div>
-      <div className="hub-grid">{topics.map((topic) => <button className="hub-card" key={topic.id} onClick={() => onOpen('hub', topic.id)}><span className="card-top"><span className="icon"><Icon name={topic.id}/></span><span className="arrow">↗</span></span><strong>{topic.title}</strong><small>{topic.short}</small></button>)}</div>
-    </section>
-    <section className="section navigator" aria-labelledby="ai-heading"><div className="section-head"><div className="nav-title"><span className="icon"><Icon name="navigator"/></span><div><div className="eyebrow">02 · AI Information Navigator</div><h2 id="ai-heading">I have a specific question</h2><p className="section-sub">Break down questions, connect reviewed information and find relevant support.</p></div></div></div>
-      <div className="suggestions"><button className="chip" onClick={() => fill('I am considering moving to another city with my 8-year-old daughter. She may need to change schools, and I am concerned about existing parenting orders.')}>Moving with a child and changing schools</button><button className="chip" onClick={() => fill('My child’s emotions have changed a lot lately. Where can I find support?')}>Children’s emotions and support</button><button className="chip" onClick={() => fill('I need to leave my current home temporarily, but I do not know which housing services I can contact.')}>Temporary housing and safety</button></div>
-      <form className="askbox" onSubmit={ask}><textarea rows="1" placeholder="Enter your question…" aria-label="Enter your question" value={question} onChange={(event) => setQuestion(event.target.value)}/><button className="send" aria-label="Send question"><SendIcon/></button></form>
-    </section>
-    <section className="section" aria-labelledby="case-heading"><div className="section-head"><div><div className="eyebrow">03 · My Case Summary</div><h2 id="case-heading">I have started contacting services and want to organise my information</h2><p className="section-sub">Keep a summary you have confirmed, then prepare tailored drafts when needed.</p></div></div>
-      <div className="case-card"><div className="case-copy"><span className="icon"><Icon name="document"/></span><div><h3>My Case Summary</h3><p>The demo workspace uses fictional information; you confirm any changes.</p></div></div><div className="case-buttons"><button className="primary" onClick={() => onOpen('summary')}>Open Workspace <span aria-hidden="true">→</span></button></div></div>
-      <details className="privacy"><summary>How my information is handled</summary><div className="privacy-content"><p>This is a research prototype. The demo uses fictional scenarios in this browser only; it does not connect to an AI service, send input to an organisation, or provide secure storage, encryption or deletion for real cases. Do not enter real names, addresses, schools or family violence experiences.</p><p>AI Navigator and My Case Summary do not share records. Summary changes apply only after you choose “Confirm changes”. Message drafts can be reviewed, edited and copied, and are never sent automatically. Demo input is not saved after you leave the page.</p><p><strong>Quick Exit</strong>leaves this page but cannot clear browser history or prevent device monitoring.</p></div></details>
-    </section>
-  </main>;
+function Diff({before,after}) {const changes=differences(before,after);return changes.length?<div className="diff-list">{changes.map(d=><div className="diff-item" key={d.key}><strong>{d.type==='Added'?'+':d.type==='Removed'?'−':'↔'} {d.type} · {d.label}</strong>{d.before&&<div className="diff-before"><span>Before</span><p>{d.before}</p></div>}<div className="diff-after"><span>{d.type==='Removed'?'Proposed removal':'Proposed text'}</span><p>{d.after||'(Empty field)'}</p></div></div>)}</div>:<p className="small-copy">No changes from this version.</p>;}
+function SummaryPane({activated,onToast}) {
+ const [privacyAccepted,setPrivacyAccepted]=useState(false);
+ const [history,setHistory]=useState([{number:1,summary:{...initialSummary},note:'Initial fictional record'}]);
+ const summary=history.at(-1).summary;const version=history.at(-1).number;
+ const [proposed,setProposed]=useState(null);const [proposalNote,setProposalNote]=useState('');const [editing,setEditing]=useState(false);
+ const [documentOpen,setDocumentOpen]=useState(true);const [mode,setMode]=useState('update');const [value,setValue]=useState('');const [status,setStatus]=useState('');
+ const [recipient,setRecipient]=useState('legal');const options=disclosureOptions(summary);
+ const [selected,setSelected]=useState(()=>defaultDisclosures(disclosureOptions(initialSummary),'legal'));
+ const [request,setRequest]=useState('');const [draft,setDraft]=useState('');const [draftVersion,setDraftVersion]=useState(null);const [draftEditing,setDraftEditing]=useState(false);
+ const [viewVersion,setViewVersion]=useState(null);
+ const focused=history.find(v=>v.number===viewVersion);
+ function proposeContact(){setProposed(contactProposal(summary));setProposalNote('LawAccess contact update');setEditing(false);setDocumentOpen(true);setStatus('Proposed changes ready. The confirmed record has not changed.');setValue('');}
+ function submitUpdate(e){e.preventDefault();if(!value.trim())return;if(value.trim()===sampleUpdate){proposeContact();}else{setStatus('This demo only processes the prepared fictional update. No personal details have been added. Use “Load sample contact update” or edit the fictional summary directly.');setValue('');}}
+ function confirm(){if(!Object.values(proposed).every(isEnglishDemoText)){onToast('Please use English for this fictional demo.');return;}const next=confirmVersion(history,proposed,proposalNote);setHistory(next);setSelected(defaultDisclosures(disclosureOptions(next.at(-1).summary),recipient));setProposed(null);setEditing(false);setStatus(`Version ${next.at(-1).number} confirmed. Earlier versions are still available.`);}
+ function switchRecipient(next){setRecipient(next);setSelected(defaultDisclosures(options,next));setRequest('');setDraft('');}
+ function changeSelection(id){setSelected(current=>current.includes(id)?current.filter(x=>x!==id):[...current,id]);setDraft('');}
+ function prepare(){if(!isEnglishDemoText(request)){onToast('Please use English for the fictional draft.');return;}setDraft(composeDraft(summary,recipient,selected,request));setDraftVersion(version);setDraftEditing(false);}
+ async function copy(){try{await navigator.clipboard.writeText(draft);onToast('Fictional draft copied. Clipboard contents may remain on this device.');}catch{onToast('Clipboard unavailable. Select and copy the fictional draft manually.');}}
+ return <article className="pane"><div className="pane-head"><div><div className="eyebrow">My Case Summary</div><h2>A record you choose to confirm</h2></div><span className="version-pill">Version {version}</span></div><div className="pane-body summary-body">
+ {activated&&!privacyAccepted?<div className="privacy-reminder" role="note"><b>Privacy reminder</b><p>This is a fictional record demonstration. It does not securely store real personal information. Do not enter family violence or child details. Closing the workspace preserves this tab’s demo state; refreshing resets it. Quick Exit cannot remove device or browser traces.</p><button className="primary" onClick={()=>setPrivacyAccepted(true)}>I understand — use fictional data only</button></div>:<div className="summary-banner">Fictional, user-confirmed statements · No secure long-term storage · Resets on refresh</div>}
+ <div className="summary-doc"><div className="doc-head"><div><h3>Master Summary</h3><span className="updated-note">Version {version} · Confirmed · User-reported fictional record</span></div><button className="text-link" aria-expanded={documentOpen} onClick={()=>setDocumentOpen(!documentOpen)}>{documentOpen?'Collapse document':'Expand document'}</button></div>{documentOpen&&<>{Object.entries(fieldLabels).map(([key,label])=><div className="doc-field" key={key}><strong>{label}</strong><p>{summary[key]||'No information recorded.'}</p>{proposed&&summary[key]!==proposed[key]&&<div className="inline-proposal"><b>{proposed[key].trim()?'+ Proposed change':'− Proposed removal'}</b><p>{proposed[key]||'(This field will be empty)'}</p></div>}</div>)}<button className="secondary edit-record" onClick={()=>{setProposed({...summary});setProposalNote('Edited fictional record');setEditing(true);}}>Edit fictional record</button></>}</div>
+ {proposed&&<section className="proposed" aria-label="Proposed changes"><h3>{proposalNote.startsWith('Restore')?'Proposed restoration':'Proposed changes'} · Awaiting confirmation</h3><p>The confirmed version stays unchanged until you choose Confirm Changes.</p>{editing?<div className="proposal-editor">{Object.entries(fieldLabels).map(([key,label])=><label key={key}>{label}<textarea aria-label={`Proposed ${label}`} value={proposed[key]} onChange={e=>setProposed({...proposed,[key]:e.target.value})} rows="3" maxLength={3000}/></label>)}</div>:<Diff before={summary} after={proposed}/>}<div className="change-actions"><button className="confirm" disabled={!differences(summary,proposed).length} onClick={confirm}>Confirm Changes</button><button className="secondary" onClick={()=>setEditing(!editing)}>{editing?'Preview changes':'Edit'}</button><button className="discard" onClick={()=>{setProposed(null);setEditing(false);setStatus('Proposed changes discarded. The confirmed version is unchanged.');}}>Discard</button></div></section>}
+ <details className="summary-history"><summary>History · {history.length} {history.length===1?'version':'versions'}</summary><p>Snapshots are fictional and stay only in this tab until refresh.</p><div className="history-list">{history.map(v=><button key={v.number} className={viewVersion===v.number?'selected':''} onClick={()=>setViewVersion(v.number)}>Version {v.number} · {v.note}{v.number===version?' · Current':''}</button>)}</div>{focused&&<div className="history-snapshot"><h4>Version {focused.number} · Read-only snapshot</h4>{Object.entries(fieldLabels).map(([key,label])=><div className="doc-field" key={key}><strong>{label}</strong><p>{focused.summary[key]||'No information recorded.'}</p></div>)}{focused.number>1&&<details><summary>Changes from Version {focused.number-1}</summary><Diff before={history.find(v=>v.number===focused.number-1).summary} after={focused.summary}/></details>}{focused.number!==version&&<button className="secondary" onClick={()=>{setProposed({...focused.summary});setProposalNote(`Restore Version ${focused.number}`);setEditing(false);setDocumentOpen(true);setStatus(`Restoration preview ready. Confirmation will create Version ${version+1}, preserving every earlier version.`);}}>Preview restoration of Version {focused.number}</button>}</div>}</details>
+ <section className="summary-actions"><h3>What would you like to do?</h3><div className="mode-switch"><button className={`mode ${mode==='update'?'selected':''}`} aria-pressed={mode==='update'} onClick={()=>setMode('update')}>Update Information</button><button className={`mode ${mode==='prepare'?'selected':''}`} aria-pressed={mode==='prepare'} onClick={()=>setMode('prepare')}>Prepare a Message</button></div>
+ {mode==='update'?<><button className="chip" onClick={()=>setValue(sampleUpdate)}>Load sample contact update</button><p className="small-copy">Use the prepared LawAccess record. No AI processes other submissions.</p><form className="summary-composer" onSubmit={submitUpdate}><label htmlFor="summary-update">Fictional contact update</label><textarea id="summary-update" rows="4" value={value} onChange={e=>setValue(e.target.value)} maxLength={2000} placeholder="Load the sample update above. Do not enter personal information."/><button className="primary" disabled={!value.trim()} type="submit">Preview Update</button></form></>:<div className="draft-controls"><label>Who are you contacting?<select value={recipient} onChange={e=>switchRecipient(e.target.value)}><option value="legal">Legal Aid NSW</option><option value="school">School Support</option></select></label><label>What do you need to ask?<textarea rows="3" value={request} onChange={e=>{setRequest(e.target.value);setDraft('');}} maxLength={1500} placeholder={recipient==='school'?'School enrolment, continuity of support and privacy':'Relocation, parenting orders and legal assistance'}/></label><fieldset><legend>Information Included</legend><p className="small-copy">Choose statements from confirmed Version {version}. Uncheck anything you do not want to disclose.</p>{options.map(o=><label className="disclosure-option" key={o.id}><input type="checkbox" checked={selected.includes(o.id)} onChange={()=>changeSelection(o.id)}/><span><small>{o.section}</small>{o.text}</span></label>)}</fieldset><button className="primary" onClick={prepare}>Generate fictional draft</button></div>}
+ <p className="action-status" role="status">{status}</p>{draft&&<div className="message-result"><strong>DRAFT · For {recipient==='school'?'School Support':'Legal Aid NSW'} · Review before use</strong><span className="updated-note">Based on confirmed Version {draftVersion}. No changes made to Master Summary.</span>{draftVersion!==version&&<p className="stale-draft">The summary has changed. Generate a new draft to use the latest confirmed record.</p>}{draftEditing?<label>Edit fictional draft<textarea rows="12" value={draft} onChange={e=>{if(isEnglishDemoText(e.target.value))setDraft(e.target.value);else onToast('Please keep this demo in English.');}}/></label>:<div className="draft-text">{draft}</div>}<p className="clipboard-note">Fictional content only. Copying can leave information on the device clipboard. No message is sent.</p><div className="change-actions"><button className="copy-btn" onClick={copy}>Copy draft</button><button className="copy-btn" onClick={()=>setDraftEditing(!draftEditing)}>{draftEditing?'Finish editing':'Edit draft'}</button><button className="copy-btn" onClick={()=>setDraft('')}>Discard draft</button></div></div>}
+ </section></div></article>;
 }
-
-function SendIcon() {
-  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="m4 12 16-8-5 16-3-7-8-1Z"/><path d="m12 13 4-4"/></svg>;
-}
-
-function ArticlePane({ topic, onTopic }) {
-  return <article className="pane pane-active"><div className="pane-head"><div><div className="eyebrow">VERIFIED INFORMATION HUB</div><h2>{topic.title}</h2></div></div><div className="pane-body">
-    <div className="article-kicker">{topic.en}</div><h1 className="article-title">{topic.title}</h1><p className="article-lede">{topic.lede}</p>
-    <div className="article-section"><h3>What is this about?</h3><p>{topic.what}</p></div><div className="article-section"><h3>What can I check?</h3><p>{topic.options}</p></div>
-    <div className="article-section"><h3>Related topics</h3><div className="related">{topic.links.map((label) => <button key={label} onClick={() => onTopic(topicByTitle[label].id)}>{label} →</button>)}</div></div>
-    <div className="article-section"><h3>Official and specialist sources</h3><div className="source-list">{topic.sources.map(([label, url]) => <a href={url} target="_blank" rel="noreferrer" key={url}>{label} ↗</a>)}</div></div>
-    <span className="review-stamp">Source links are illustrative · Content requires professional review · October 2026</span>
-  </div></article>;
-}
-
-function AnswerCard({ onTopic }) {
-  return <div className="bubble assistant">
-    <div className="answer-title">Let’s separate the related questions</div>
-    <div className="answer-block"><strong>1 · You may be considering</strong><p>Existing parenting orders or other arrangements, your child’s school transfer and continuity, and safety and support for you and your child.</p></div>
-    <div className="answer-block"><strong>2 · Start with these topics</strong><p><button className="text-link" onClick={() => onTopic('law')}>Family Law & Parenting →</button>　<button className="text-link" onClick={() => onTopic('education')}>Education & Care →</button>　<button className="text-link" onClick={() => onTopic('safety')}>Child Safety →</button></p></div>
-    <div className="answer-block"><strong>3 · How these issues connect</strong><p>If parenting orders are in place, a move may relate to existing arrangements. Moving can also affect school, transport and daily care. Checking the orders and asking legal services, the school and a specialist safety service can help clarify how these issues connect.<a href="https://www.fcfcoa.gov.au/fl/children/parenting-orders" target="_blank" rel="noreferrer">Court information about parenting orders</a> · <a href="https://education.nsw.gov.au/schooling/parents-and-carers/going-to-school/enrolment" target="_blank" rel="noreferrer">NSW school enrolment information</a></p></div>
-    <div className="answer-block"><strong>4 · What cannot be determined from this description</strong><p>Whether a move is permitted, what an order means in your situation, whether a school has places and your current risk level all need to be checked by professionals who understand the circumstances. This response cannot determine whether you can move.</p></div>
-    <div className="answer-block"><strong>5 · Services you can ask for support</strong><p><b>Legal Aid NSW</b>：Ask about existing orders and legal issues related to a relocation plan.<br/><b>1800RESPECT · 1800 737 732</b>：Discuss family violence support, safety planning and referrals; this is not an emergency response service.<br/><b>The prospective school</b>：Ask about enrolment, available places and student wellbeing support.</p></div>
-    <div className="review-stamp">Scripted demo response · No AI used · Information needs professional review</div>
-  </div>;
-}
-
-function AIPane({ messages, onSend, onTopic }) {
-  const [value, setValue] = useState('');
-  const submit = (event) => { event.preventDefault(); if (!value.trim()) return; onSend(value.trim()); setValue(''); };
-  return <article className="pane pane-active"><div className="pane-head"><div><div className="eyebrow">AI INFORMATION NAVIGATOR</div><h2>Work through a specific question</h2></div></div><div className="pane-body"><div className="chat-wrap"><div className="chat-scroll">
-    {messages.map((message, index) => message.role === 'user' ? <div className="bubble user" key={index}>{message.text}</div> : message.role === 'answer' ? <AnswerCard key={index} onTopic={onTopic}/> : <div className="bubble assistant" key={index}>{message.text}</div>)}
-  </div><form className="chat-input" onSubmit={submit}><input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Ask a follow-up…" aria-label="Ask a follow-up"/><button aria-label="Send"><SendIcon/></button></form></div></div></article>;
-}
-
-function SummaryPane({ summary, setSummary, onToast }) {
-  const [mode, setMode] = useState('update');
-  const [value, setValue] = useState('');
-  const [proposed, setProposed] = useState('');
-  const [history, setHistory] = useState(['Version 1 · Initial fictional summary']);
-  const [draft, setDraft] = useState('');
-  const [version, setVersion] = useState(1);
-
-  const sendAction = () => {
-    const request = value.trim();
-    if (!request) { onToast('Enter a demo note first.'); return; }
-    if (mode === 'update') {
-      setProposed(`User reports: ${request}`);
-      onToast('Proposed addition is ready for review');
-      return;
-    }
-    const recipient = /school|school staff/.test(request) ? 'School' : /1800|family violence|safety service/.test(request) ? 'family violence support service' : 'Legal Aid NSW';
-    const focus = recipient === 'School'
-      ? 'My child may need to change schools. I would like to understand enrolment, available places and student wellbeing support.'
-      : recipient === 'family violence support service'
-        ? 'I am thinking about safety and living arrangements for my child and me. I would like to discuss safety planning and support options.'
-        : 'I am considering moving to another city with my 8-year-old daughter. We need to check our current arrangements and whether parenting orders exist. I would like to understand the legal issues that may relate to a move.';
-    setDraft(`Hello, I would like advice about arrangements for my child.\n\n${focus}\n\nMy main concern is how to consider my child’s stability and safety together. What should I check next in my circumstances, and what support may be available?\n\nThank you.`);
-    setValue('');
-  };
-
-  const confirm = () => {
-    if (!proposed) return;
-    const next = summary.map(([label, text]) => label === 'Service Contact History'
-      ? [label, 'User reports contacting a legal advice service today, which suggested first checking whether parenting orders exist.']
-      : label === 'Outstanding Questions'
-        ? [label, 'Relocation legal questions remain unresolved; check whether parenting orders exist.']
-        : [label, text]);
-    setSummary(next);
-    setVersion(2);
-    setHistory((items) => [...items, 'Version 2 · Confirmed update: contacted a legal advice service']);
-    setProposed('');
-    onToast('Changes confirmed; Version 2 created');
-  };
-
-  const copy = async () => {
-    try { await navigator.clipboard.writeText(draft); onToast('Draft copied'); }
-    catch { onToast('Clipboard unavailable. Select and copy the draft manually.'); }
-  };
-
-  return <article className="pane pane-active"><div className="pane-head"><div><div className="eyebrow">MY CASE SUMMARY</div><h2>My Summary Workspace</h2></div></div><div className="pane-body">
-    <div className="summary-banner">Privacy note: The information below is fictional. This prototype does not connect to AI or store real case information. Do not enter personal details.</div>
-    <div className="summary-doc"><div className="doc-head"><div><h3>Master Summary</h3><span className="updated-note">Last updated: demo session</span></div><span className="version-pill">Version {version}</span></div>
-      {summary.map(([label, text]) => <div className="doc-field" key={label}><strong>{label}</strong><p>{text}</p></div>)}
-      {proposed && <div className="proposed"><em>Proposed addition · Awaiting confirmation</em>{proposed}<div className="change-actions"><button className="confirm" onClick={confirm}>Confirm changes</button><button className="discard" onClick={() => { setProposed(''); onToast('Proposed addition discarded'); }}>Discard</button></div></div>}
-    </div>
-    <details className="summary-history"><summary>History · View version history</summary>{history.map((item) => <p key={item}>{item}</p>)}</details>
-    <div className="article-section"><h3>What would you like to do?</h3><div className="mode-switch"><button className={`mode ${mode === 'update' ? 'selected' : ''}`} onClick={() => setMode('update')}>Update Information</button><button className={`mode ${mode === 'prepare' ? 'selected' : ''}`} onClick={() => setMode('prepare')}>Prepare a Message</button></div>
-      <div className="chat-input"><input value={value} onChange={(event) => setValue(event.target.value)} placeholder={mode === 'update' ? 'For example: I contacted a legal advice service today. They suggested checking whether parenting orders exist…' : 'For example: I would like to ask Legal Aid NSW about moving with my child.'} aria-label="Summary action"/><button onClick={sendAction} aria-label="Submit">↗</button></div>
-      {draft && <div className="message-result"><strong>Message draft · Please review</strong><div className="draft-text">{draft}</div><div className="included">Includes: family situation, relocation concerns and requested professional help. This draft uses fictional summary details and will not be sent automatically.</div><button className="copy-btn" onClick={copy}>Copy draft</button></div>}
-    </div>
-  </div></article>;
-}
-
-function Workspace({ activePane, setActivePane, layout, setLayout, topic, onTopic, messages, onSend, summary, setSummary, onHome, onToast }) {
-  const visible = useMemo(() => {
-    if (layout === 'triple') return [activePane, ...['hub', 'ai', 'summary'].filter((id) => id !== activePane)];
-    if (layout === 'split') return activePane === 'summary' ? ['summary', 'hub'] : [activePane, activePane === 'hub' ? 'ai' : 'hub'];
-    return [activePane];
-  }, [activePane, layout]);
-  const panes = { hub: <ArticlePane topic={topic} onTopic={onTopic}/>, ai: <AIPane messages={messages} onSend={onSend} onTopic={onTopic}/>, summary: <SummaryPane summary={summary} setSummary={setSummary} onToast={onToast}/> };
-  return <section className="workspace">
-    <div className="workspace-bar"><div className="workspace-links"><button className="back-btn" onClick={onHome}>← Home</button>{[['hub', 'Information Hub'], ['ai', 'AI Navigator'], ['summary', 'My Case Summary']].map(([id, label]) => <button key={id} className={`nav-tab ${activePane === id ? 'active' : ''}`} onClick={() => setActivePane(id)}>{label}</button>)}</div>
-      <div className="workspace-tools"><button className={`view-btn ${layout === 'single' ? 'active' : ''}`} data-layout-btn="single" onClick={() => setLayout('single')}>Single view</button><button className={`view-btn ${layout === 'split' ? 'active' : ''}`} data-layout-btn="split" onClick={() => setLayout('split')}>Two panels</button><button className={`view-btn ${layout === 'triple' ? 'active' : ''}`} data-layout-btn="triple" onClick={() => setLayout('triple')}>Three panels</button><button className="view-btn" onClick={onHome}>Close workspace ×</button></div>
-    </div>
-    <div className="panes" data-layout={layout}>{['hub', 'ai', 'summary'].map((id) => <div className={`pane-slot pane-${id} ${visible.includes(id) ? '' : 'is-hidden'} ${activePane === id ? 'mobile-active' : ''}`} key={id}>{panes[id]}</div>)}</div>
-    <footer className="footer"><span><strong>Research prototype · Classroom demo only</strong>　Not legal, medical or safety advice</span><span>Demo input is not saved after you leave this page.</span></footer>
-  </section>;
-}
-
+const defaultHash=()=>{const id=window.location.hash.match(/^#\/hub\/([A-F][1-6])$/)?.[1];return pageById[id]?id:null;};
 export default function App() {
-  const [page, setPage] = useState('home');
-  const [activePane, setActivePane] = useState('hub');
-  const [layout, setLayout] = useState('single');
-  const [topicId, setTopicId] = useState('law');
-  const [messages, setMessages] = useState([{ role: 'intro', text: 'Hello. Describe what you are considering and I will use this demo’s scripted information to help break down the question. Do not enter real identifying information.' }]);
-  const [summary, setSummary] = useState(summaryFields);
-  const [toast, setToast] = useState('');
-  const topic = topics.find((entry) => entry.id === topicId) || topics[0];
-
-  const showToast = (message) => { setToast(message); window.clearTimeout(showToast.timer); showToast.timer = window.setTimeout(() => setToast(''), 2400); };
-  const open = (pane, selectedTopic = null) => { if (selectedTopic) setTopicId(selectedTopic); setActivePane(pane); setLayout('single'); setPage('workspace'); window.scrollTo({ top: 0, behavior: 'smooth' }); };
-  const ask = (question) => { setMessages((items) => [...items, { role: 'user', text: question }, { role: 'answer' }]); open('ai'); };
-  const sendChat = (question) => setMessages((items) => [...items, { role: 'user', text: question }, { role: 'answer' }]);
-  const chooseTopic = (id) => { setTopicId(id); setActivePane('hub'); if (layout === 'single') setLayout('single'); };
-  const home = () => { setPage('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); };
-
-  return <div className="shell" id="app">
-    <Header onHome={home} onOpen={open}/>
-    {page === 'home' ? <><HomePage onOpen={open} onAsk={ask}/><footer className="footer" id="home-footer"><span><strong>FASS3999 · Research Prototype</strong>　For concept demonstration only; no real services are provided.</span><span>If you are in immediate danger, contact local emergency services or a specialist support service.</span></footer></> : <Workspace activePane={activePane} setActivePane={setActivePane} layout={layout} setLayout={setLayout} topic={topic} onTopic={chooseTopic} messages={messages} onSend={sendChat} summary={summary} setSummary={setSummary} onHome={home} onToast={showToast}/>}
-    <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">{toast}</div>
-  </div>;
+ const first=useRef(defaultHash());
+ const [page,setPage]=useState(first.current?'workspace':'home');const [active,setActive]=useState('hub');
+ const [layout,setLayout]=useState('single');const [pair,setPair]=useState(['hub','ai']);const [selection,setSelection]=useState(first.current||'all');
+ const [messages,setMessages]=useState([]);const [summaryActivated,setSummaryActivated]=useState(false);const [fromAI,setFromAI]=useState(false);const [toast,setToast]=useState('');
+ const hubRef=useRef(null);const hubScroll=useRef(new Map());const toastTimer=useRef(null);
+ useEffect(()=>()=>window.clearTimeout(toastTimer.current),[]);
+ useEffect(()=>{const handle=()=>{const id=defaultHash();if(id){setSelection(id);setPage('workspace');setActive('hub');}else if(window.location.hash==='#home'){setPage('home');}};window.addEventListener('hashchange',handle);return()=>window.removeEventListener('hashchange',handle);},[]);
+ useEffect(()=>{if(hubRef.current)hubRef.current.scrollTop=hubScroll.current.get(selection)||0;},[selection]);
+ useEffect(()=>{if(hubRef.current&&active==='hub')hubRef.current.scrollTop=hubScroll.current.get(selection)||0;},[active,page]);
+ function notify(message){setToast(message);window.clearTimeout(toastTimer.current);toastTimer.current=window.setTimeout(()=>setToast(''),4200);}
+ function open(pane){setPage('workspace');setActive(pane);if(pane==='summary')setSummaryActivated(true);if(layout==='split'&&!pair.includes(pane))setPair([pair[0],pane]);window.scrollTo(0,0);}
+ function home(){setPage('home');window.history.replaceState(null,'','#home');window.scrollTo(0,0);}
+ function select(next){if(hubRef.current)hubScroll.current.set(selection,hubRef.current.scrollTop);setSelection(next);}
+ function category(id){select(id);setFromAI(false);open('hub');window.history.replaceState(null,'','#/hub');}
+ function topic(id,origin=false){select(id);setFromAI(origin || fromAI);if(layout==='split'&&origin&&!pair.includes('hub'))setPair(['ai','hub']);open('hub');window.history.replaceState(null,'',`#/hub/${id}`);}
+ function sample(){setMessages(items=>items.some(m=>m.type==='sample')?items:[...items,{type:'sample'}]);open('ai');}
+ function question(value){if(value.trim()===sampleScenario){sample();return;}if(!value.trim())return;setMessages(items=>[...items,{type:'limitation'}]);open('ai');}
+ function chooseLayout(next){setLayout(next);if(next==='split'&&!pair.includes(active))setPair([active,active==='hub'?'ai':'hub']);if(next==='triple')setSummaryActivated(true);}
+ const visible=layout==='triple'?['hub','ai','summary']:layout==='split'?pair:[active];
+ return <div className={`shell ${page==='workspace'&&layout!=='single'?'wide-shell':''}`}><a className="skip-link" href="#main-content">Skip to content</a><Header onOpen={open} onHome={home}/><div id="main-content" tabIndex="-1"><div hidden={page!=='home'}><Home onOpen={open} onCategory={category} onSample={sample} onQuestion={question}/></div><section className="workspace" hidden={page!=='workspace'} aria-label="Information workspaces"><div className="workspace-bar"><div className="workspace-links"><button className="back-btn" onClick={home}>← Home</button>{Object.entries(paneNames).map(([id,name])=><button className={`nav-tab ${active===id?'active':''}`} aria-pressed={active===id} key={id} onClick={()=>open(id)}>{name}</button>)}</div><div className="workspace-tools"><div className="layout-controls" aria-label="Workspace layout">{[['single','Single view'],['split','Two panels'],['triple','Three panels']].map(([id,name])=><button data-layout-btn={id} className={`view-btn ${layout===id?'active':''}`} aria-pressed={layout===id} key={id} onClick={()=>chooseLayout(id)}>{name}</button>)}{layout==='split'&&<label className="pair-select"><span className="sr-only">Choose two workspaces</span><select aria-label="Choose two workspaces" value={pair.join(',')} onChange={e=>{const next=e.target.value.split(',');setPair(next);setActive(next[0]);if(next.includes('summary'))setSummaryActivated(true);}}><option value="hub,ai">Hub + Navigator</option><option value="hub,summary">Hub + Summary</option><option value="ai,summary">Navigator + Summary</option></select></label>}</div><button className="view-btn" onClick={home}>Close workspace ×</button></div></div><div className="panes" data-layout={layout}>{['hub','ai','summary'].map(id=><div key={id} className={`pane-slot ${visible.includes(id)?'':'is-hidden'} ${active===id?'mobile-active':''}`}>{id==='hub'?<HubPane selection={selection} onCategory={category} onTopic={topic} backToAI={fromAI?()=>open('ai'):null} bodyRef={hubRef}/>:id==='ai'?<NavigatorPane messages={messages} onSample={sample} onQuestion={question} onTopic={id=>topic(id,true)}/>:<SummaryPane activated={summaryActivated} onToast={notify}/>}</div>)}</div><EmergencyNote/><Footer/></section></div><div className={`toast ${toast?'show':''}`} role="status" aria-live="polite">{toast}</div></div>;
 }
