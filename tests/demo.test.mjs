@@ -43,6 +43,41 @@ test('36 complete English pages retain working topic references and specific off
  assert.equal(content.pages.length,36);const ids=new Set(content.pages.map(p=>p.id));assert.equal(ids.size,36);
  for(const p of content.pages){assert.ok(p.body.length>150);assert.ok(p.official_information.length);assert.ok(p.professional_services.length);for(const id of p.related_topic_ids)assert.ok(ids.has(id),`${p.id} -> ${id}`);for(const source of p.official_information){assert.ok(source.url.startsWith('https://'));assert.ok(source.organisation);assert.ok(source.supports);}}
  for(const category of 'ABCDEF')assert.equal(content.pages.filter(p=>p.id.startsWith(category)).length,6);
- for(const file of ['App.jsx','data.jsx','demo-model.mjs','hub-content.json','styles.css'])assert.ok(isEnglishDemoText(fs.readFileSync(new URL(`../src/${file}`,import.meta.url),'utf8')),`${file} contains Chinese`);
+ for(const file of ['App.jsx','data.jsx','demo-model.mjs','hub-content.json','styles.css','visual.css'])assert.ok(isEnglishDemoText(fs.readFileSync(new URL(`../src/${file}`,import.meta.url),'utf8')),`${file} contains Chinese`);
  assert.match(fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),/lang="en"/);
+});
+
+test('a two-field update saves exactly one version only when every field has a decision', async()=>{
+ const {beginReview,reviewField,finishReview}=await import('../src/demo-model.mjs');
+ const history=initial();let batch=beginReview(initialSummary,contactProposal(initialSummary),'LawAccess');
+ const originalBatch=structuredClone(batch);
+ batch=reviewField(batch,'contacts','accepted');
+ let result=finishReview(history,batch);
+ assert.equal(result.complete,false);assert.equal(result.history,history);
+ assert.equal(history[0].summary.contacts,initialSummary.contacts);
+ assert.equal(originalBatch.fields.contacts.status,'pending');
+ batch=reviewField(batch,'questions','accepted');result=finishReview(history,batch);
+ assert.equal(result.complete,true);assert.equal(result.history.length,2);assert.match(result.history[1].summary.contacts,/LawAccess/);
+ assert.deepEqual(result.history[1].summary,contactProposal(initialSummary));
+});
+test('discard is field-specific, accepted edits are used, and discarding all creates no version', async()=>{
+ const {beginReview,reviewField,finishReview}=await import('../src/demo-model.mjs');
+ const history=initial();const initialBatch=beginReview(initialSummary,contactProposal(initialSummary),'LawAccess');
+ let batch=reviewField(initialBatch,'contacts','accepted','I report a sample contact with LawAccess NSW.');
+ batch=reviewField(batch,'questions','discarded');
+ const result=finishReview(history,batch);
+ assert.equal(result.history[1].summary.contacts,'I report a sample contact with LawAccess NSW.');
+ assert.equal(result.history[1].summary.questions,initialSummary.questions);
+ batch=reviewField(reviewField(initialBatch,'contacts','discarded'),'questions','discarded');
+ assert.equal(finishReview(history,batch).history,history);
+ assert.equal(beginReview(initialSummary,initialSummary,'No change'),null);
+});
+test('restoration uses field review and creates a new version without replacing existing snapshots',async()=>{
+ const {beginReview,reviewField,finishReview}=await import('../src/demo-model.mjs');
+ const h2=confirmVersion(initial(),contactProposal(initialSummary),'Contact');
+ let batch=beginReview(h2.at(-1).summary,h2[0].summary,'Restore Version 1');
+ for(const key of Object.keys(batch.fields))batch=reviewField(batch,key,'accepted');
+ const h3=finishReview(h2,batch).history;
+ assert.equal(h3.length,3);assert.equal(h3[2].number,3);assert.deepEqual(h3[2].summary,initialSummary);
+ assert.match(h3[1].summary.contacts,/LawAccess/);assert.deepEqual(h3[0].summary,initialSummary);
 });

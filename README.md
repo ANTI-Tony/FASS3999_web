@@ -18,14 +18,20 @@ No API key, account or backend is needed. Vite serves this project under `/FASS3
 
 ## Demonstration journey
 
-1. Select **Try a sample scenario**. Explore the six expandable domains, Information Map, precise Hub links and professional support cards.
+1. With the Home or Navigator question box empty, use its **Try sample scenario** arrow. Explore the six expandable domains, Information Map, precise Hub links and professional support cards.
 2. Open **My Case Summary**. Its separate fictional record starts at Version 1.
-3. Choose **Update Information → Load sample contact update → Preview Update**. Edit, discard or confirm the proposal. Confirmation creates Version 2.
-4. Expand **History**, inspect the earlier snapshot and preview restoration. Confirmation creates a new version and preserves the previous versions.
-5. Choose **Prepare a Message**, select **Legal Aid NSW** or **School Support**, and choose the confirmed statements to include. Generate, edit, copy or discard the draft. School defaults omit violence details, legal contact history and the sibling’s developmental support.
+3. Choose **Update Information**. Use the empty input’s **Try sample update** arrow to load the prepared contact record, then the **Preview contact update** arrow. Review suggestions directly beside each Master Summary field. Edit, confirm or discard each field independently. The batch creates a single new version only after every field has a decision, and only if an accepted field changed.
+4. Expand **History** to see the latest confirmed snapshot by default, inspect earlier versions and preview restoration. Restoration uses the same inline field review and creates a new version, preserving previous snapshots.
+5. Choose **Prepare a Message**, select **Legal Aid NSW** or **School Support**, and choose the confirmed statements to include. Prepare, edit, copy or discard the draft. School defaults omit violence details, legal contact history and the sibling’s developmental support.
 6. Try each two-pane combination or all three panes on desktop. Mobile shows one active pane. Closing and reopening the workspace preserves this tab’s state; refresh resets everything.
 
 Unrecognised Navigator questions are not echoed or answered as personalised advice. Only the supplied fictional contact update is automatically organised. Direct edits to the fictional summary are previewed and require confirmation. No chat or summary data is written to local storage, cookies, a server or an AI provider. Navigator and Summary do not share records.
+
+## Visual design
+
+The established sage and ivory identity is extended with editorial serif headings, softly coloured category cards, clear section numbering and two original generated illustrations. Assets are repository-local WebP files in `public/images/`, with provenance and prompts in that folder’s README. The hero image loads eagerly; the summary illustration loads lazily. The interface remains English-only.
+
+Navigator answers prioritise a direct integrated explanation and two core service entries. Six domains, detailed support, sources, the full prepared question and the Information Map remain expandable. A4, B3, E3 and F3 have a restrained Featured walkthrough badge. All 36 source-content records remain unchanged.
 
 ## Content
 

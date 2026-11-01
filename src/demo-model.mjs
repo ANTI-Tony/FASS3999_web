@@ -43,3 +43,19 @@ export function composeDraft(summary, recipient, selected, request) {
   return `Hello,\n\n${facts ? facts+'\n\n' : ''}${purpose}\n\nThank you.`;
 }
 export function isEnglishDemoText(text) { return !/[\u3400-\u9fff\uf900-\ufaff]/u.test(text); }
+
+// A review batch keeps every confirmed field unchanged until all decisions are made.
+export function beginReview(before, after, note) {
+  const fields = Object.fromEntries(differences(before, after).map(d => [d.key, {value: after[d.key], status: 'pending'}]));
+  return Object.keys(fields).length ? {fields, note} : null;
+}
+export function reviewField(batch, key, decision, value = batch.fields[key]?.value) {
+  if (!batch.fields[key] || !['accepted', 'discarded'].includes(decision)) throw new Error('Invalid review decision');
+  return {...batch, fields: {...batch.fields, [key]: {value, status: decision}}};
+}
+export function finishReview(history, batch) {
+  if (Object.values(batch.fields).some(field => field.status === 'pending')) return {complete: false, history};
+  const summary = {...history.at(-1).summary};
+  for (const [key, field] of Object.entries(batch.fields)) if (field.status === 'accepted') summary[key] = field.value;
+  return {complete: true, history: confirmVersion(history, summary, batch.note)};
+}
